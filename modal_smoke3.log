@@ -1,0 +1,32 @@
+✓ Initialized. View run at 
+https://modal.com/apps/st-hou2020/main/ap-UA9F7wZoblFNUhTwjVMM68
+✓ Created objects.
+├── 🔨 Created mount /Users/steven/hip_paraphraser/modal_grpo.py
+├── 🔨 Created mount /Users/steven/hip_paraphraser/data
+└── 🔨 Created function train_grpo.
+[modal] loading detector (desklib) + embedder ...
+[modal] loading base model ...
+trainable params: 34,865,152 || all params: 1,755,440,128 || trainable%: 1.9861
+[modal] SFT on 112 pairs, 3 epochs
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[modal]  SFT epoch 1: loss 0.618
+[modal]  SFT epoch 2: loss 0.349
+[modal]  SFT epoch 3: loss 0.116
+[modal] EVAL SFT-init (baseline): P(human)=0.496 semantic=0.972
+[modal] GRPO: 140 prompts, 3 steps, G=6 B=4
+[modal] step 1/3: reward 0.507 loss 0.0023 (kept 24)
+[modal] step 2/3: reward 0.710 loss -0.0115 (kept 24)
+[modal] step 3/3: reward 0.514 loss -0.0027 (kept 24)
+[modal] EVAL GRPO: P(human)=0.488 semantic=0.972
+
+================ RESULT ================
+SFT-init  single-pass P(human) = 0.496  (semantic 0.972)
+GRPO      single-pass P(human) = 0.488  (semantic 0.972)
+reward: 0.507 -> 0.514 over 3 steps
+
+SFT sample : Along the United States coast, the National Data Buoy Center maintains an extensive network of buoys, with the United States Coast Guard responsible for their deployment and maintenance. In South Africa, the South African Weather Service deploys and recovers its own buoys, and the Meteorological Ser
+
+GRPO sample: Along the US coast, the National Data Buoy Center maintains an extensive network of buoys, with the United States Coast Guard responsible for their deployment and maintenance. In South Africa, the South African Weather Service deploys and recovers its own buoys, and the Meteorological Service of New
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/st-hou2020/main/ap-UA9F7wZoblFNUhTwjVMM68

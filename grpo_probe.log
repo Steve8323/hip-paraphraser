@@ -1,0 +1,16 @@
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 112923.57it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[grpo] initialized from adapters/adapters.safetensors
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 8523.66it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[grpo] 140 training prompts; G=6 B=4 steps=3
+[grpo] step 1/3: mean reward 0.491  loss -0.0090  (kept 24 seqs)
+[grpo] step 2/3: mean reward 0.655  loss -0.1041  (kept 18 seqs)
+[grpo] step 3/3: mean reward 0.665  loss 0.0040  (kept 24 seqs)
+[grpo] saved -> adapters_grpo  (reward 0.491 -> 0.665)

@@ -1,0 +1,74 @@
+HIP base-model paraphraser — sample outputs to paste into GPTZero yourself.
+Proxy P(human) shown is our local desklib detector (not GPTZero).
+======================================================================
+
+######## SAMPLE 1 ########
+
+--- ORIGINAL AI TEXT (proxy P(human)=0.15) ---
+Off the coast of the United States, an extensive network of buoys is maintained by the National Data Buoy Center, with the United States Coast Guard handling their deployment and upkeep. In South Africa, the South African Weather Service deploys and recovers its own buoys, while the Meteorological Service of New Zealand carries out the same role for that country. Environment Canada operates and deploys buoys on behalf of Canada, and the Met Office in Great Britain places drifting buoys throughout both the northern and southern Atlantic oceans.
+
+--- HUMANIZED, 5 rounds (proxy P(human)=0.24, semantic 9/10) ---
+On the U.S. Coast, a large network of buoys is operated by the National Data Buoy Center, with the United States Coast Guard responsible for deployment and maintenance. The South African Weather Service operates and collects its own buoys in South Africa, and the Meteorological Service of New Zealand performs the same duties for that country. Environment Canada operates and deploys buoys for Canada, and the Met Office in Great Britain places drifting buoys throughout both the northern and southern Atlantic oceans.
+
+--- HUMANIZED, 10 rounds (proxy P(human)=0.26, semantic 9/10) ---
+On the U.S. Coast, a large network of buoys is maintained by the National Data Buoy Center, under the United States Coast Guard for deployment and maintenance. The South African Weather Service operates and collects its own buoys in South Africa, and the Meteorological Service of New Zealand performs the same functions for that country. Environment Canada operates and deploys buoys for Canada, and the Met Office in Great Britain stations drifting buoys throughout both the north and southern Atlantic oceans.
+
+
+######## SAMPLE 2 ########
+
+--- ORIGINAL AI TEXT (proxy P(human)=0.49) ---
+There were numerous other versions of the NS-10, the most well-known being the "NS-10M Studio" and the "NS-10M Pro," both released in 1987. Technically identical to the "Studio," the "Pro" comes equipped with a speaker grille and is intended to be positioned vertically.
+
+--- HUMANIZED, 5 rounds (proxy P(human)=0.53, semantic 6/10) ---
+Several other versions of the NS-10 were produced, including " NS-10M Studio " and " NS-10M Pro ", which were released in 1987. The " Pro " has a speaker grille and is designed to be hung vertically.
+
+--- HUMANIZED, 10 rounds (proxy P(human)=0.57, semantic 6/10) ---
+Several other versions of the NS-10 were produced, including " NS-10M Studio " and " NS-10M Pro ", which were released in 1987. " Pro " has a speaker grille and is designed to be hung vertically.
+
+
+######## SAMPLE 3 ########
+
+--- ORIGINAL AI TEXT (proxy P(human)=0.03) ---
+The song's accompanying music video shows Beyoncé performing in a series of dance sequences. It earned three awards at the 2003 MTV Video Music Awards, and its director, Jake Nava, received the Music Video Production Association award for Best R&B Video in 2004. Since 2003, "Crazy in Love" has remained a fixture in Beyoncé's live performances and concert tours. The American Society of Composers, Authors and Publishers (ASCAP) named "Crazy in Love" one of the most performed songs of 2004. Artists such as David Byrne have recorded their own versions of the song, and it has featured in a variety of television programmes and other media.
+
+--- HUMANIZED, 5 rounds (proxy P(human)=0.92, semantic 8/10) ---
+The accompaniment music video for the song features Beyoncé performing several dance sequences. It was awarded three awards at the 2003 MTV Video Music Awards, and Jake Nava was a Music Video Production Association award for Best R&B Video in 2004. " Crazy in Love " has been a staple of Beyoncé's live shows and concert tours since 2003. " Crazy in Love " has been listed among the most performed songs of 2004 by the American Society of Composers, Authors and Publishers (ASCAP). Artists such as David Byrne have recorded their own versions of the song, and it has been used in a number of television programmes and other media.
+
+--- HUMANIZED, 10 rounds (proxy P(human)=0.91, semantic 8/10) ---
+The accompaniment music video for the track features Beyoncé performing several dance sequences. It was awarded three awards at the 2003 MTV Video Music Awards and Jake Nava was a Music Video Production Association award for Best R&B Video in 2004. " Crazy in Love " has been a staple of Beyoncé's live shows and concert tours since 2003. " Crazy in Love " has been listed among the most performed songs of 2004 by the American Society of Composers, Authors and Publishers (ASCAP). Artists such as David Byrne have recorded their own versions of the song, and it has been used in a number of television programmes and other media.
+
+
+######## SAMPLE 4 ########
+
+--- ORIGINAL AI TEXT (proxy P(human)=0.41) ---
+The Galveston Artist Residency (GAR) provides studio space, living space, and a stipend to three visual artists annually. The resident artists work across a range of media and display their creations in the GAR Gallery and Courtyards. Situated in renovated industrial buildings on the west side of downtown, GAR additionally presents performances and other events open to the public.
+
+--- HUMANIZED, 5 rounds (proxy P(human)=0.78, semantic 6/10) ---
+Galveston Artist Residency (GAR) offers studio, living and stipend to three visual artists each year. The resident artists work in several media and exhibit their work in the GAR Gallery, Courtyards, and renovated industrial buildings on the west side of downtown.
+
+--- HUMANIZED, 10 rounds (proxy P(human)=0.79, semantic 6/10) ---
+Galveston Artist Residency (GAR) provides studio, living and stipend to three visual artists each year. The resident artists work in several media and exhibit their art in the GAR Gallery, Courtyards, and renovated industrial buildings on the west side of downtown.
+
+
+######## SAMPLE 5 ########
+
+--- ORIGINAL AI TEXT (proxy P(human)=0.35) ---
+The Adventure Company revealed on 3 August 2005 that a demo of Voyage had been released, and this demo presented the game's introductory sequence within the shell. Although Voyage had originally been scheduled to launch on 27 September, it reached retailers earlier than planned, on 16 August 2005. The game was sold at a retail price of US$19.99.
+
+--- HUMANIZED, 5 rounds (proxy P(human)=0.06, semantic 9/10) ---
+The Adventure Company announced on 3 August 2005 that a demo of Voyage was released, and that the demo included the game's opening sequence in the shell. Voyage was due on 27 September, but was available at retailers earlier, on 16 August 2005. The game was sold at a retail price of US $19.99.
+
+--- HUMANIZED, 10 rounds (proxy P(human)=0.32, semantic 7/10) ---
+Voyage was announced on 3 August 2005 as being demoed, and featuring the game's opening sequence in the shell. Voyage was due on 27 September but was available at retailers earlier, on 16 August 2005. The game was sold at a retail price of US $ 19.99.
+
+
+######## SAMPLE 6 ########
+
+--- ORIGINAL AI TEXT (proxy P(human)=0.02) ---
+A more recent theory, which enjoys wide support among archaeologists, holds that Celtic culture and language reached Ireland through cultural diffusion. According to this view, the Celticisation of Ireland may have been the outcome of a prolonged process of social and economic interaction among Ireland, Britain, and neighboring regions of Continental Europe.
+
+--- HUMANIZED, 5 rounds (proxy P(human)=0.02, semantic 9/10) ---
+Celtic culture and language spread throughout Ireland through cultural diffusion. This is a more recent theory, which has gained widespread acceptance among archaeologists. The Celticisation of Ireland may have been the result of a protracted period of social and economic interaction between Ireland, Britain and the surrounding areas of Continental Europe.
+
+--- HUMANIZED, 10 rounds (proxy P(human)=0.01, semantic 0/10) ---
+There is evidence of Celtic influence in the Irish language. This is reflected in the extensive use of elative, or indicative, forms of verbs in the Irish language, as well as in the use of these forms to express personality, such as when an individual might wear the helmet of another tribe or when a group of people may band together to complete a task.

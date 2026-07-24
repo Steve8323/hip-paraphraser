@@ -1,0 +1,70 @@
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 51150.05it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9136.95it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+===== input 1 =====
+P(human): in 0.000  ->  out 0.000
+(1 round, 0 faithful of 16 drawn)
+The spread of misinformation online poses a significant challenge to democratic societies. False or misleading content can travel rapidly across social networks, shaping public opinion and eroding trust in institutions. Furthermore, algorithms that prioritize engagement may inadvertently amplify sensational or divisive material, since such content tends to attract attention. The consequences can include increased polarization and a diminished capacity for shared deliberation. Various remedies have been proposed, including fact-checking initiatives, platform accountability measures, and improved media literacy education. However, efforts to combat misinformation must be weighed carefully against concerns about free expression. In conclusion, preserving a healthy information ecosystem is essential to the functioning of democracy, though doing so without infringing on legitimate speech remains a delicate balance.
+
+===== input 2 =====
+P(human): in 0.000  ->  out 0.518  | semantic 0.804
+(1 round, 7 faithful of 16 drawn)
+A wealth tax, pegged to the total net worth of the richest households, has been getting a lot of attention, and the reasons aren't mysterious. People love the idea, they stand for fairness, and they think it could fund public programs. The catch is valuing the stuff we don't own is a messy job, and the rich might have done something to make their holdings less liquid, which still tricks the tax. A couple of European countries that used to charge such taxes have since ditched them, and the why wasn't immediately obvious. So a wealth tax has a theory that fits, but the reality is rough and the hills you need to climb are real.
+
+===== input 3 =====
+P(human): in 0.000  ->  out 0.052  | semantic 0.839
+(1 round, 1 faithful of 16 drawn)
+Houseplants are a big deal, and they're an easy, fulfilling way to bring color and life to your place. If you're just getting started, go with the hardy, low-maintenance ones, the snake plant, pothos, or ZZ plant all of them can take a bit of care, but they'll survive. The biggest mistake rookie plant owners make is watering it dry, which slowly kills the roots. So let the soil dry a little between waters, and make sure the pots have drainage. And keep an eye on how much light the plant needs, some species want bright sun, some need shade. With a little patience and a little effort, you can keep them alive and the plants start pulling you in, calm and aesthetic, they're a real upgrade.
+
+===== input 4 =====
+P(human): in 0.000  ->  out 0.846  | semantic 0.820
+(1 round, 1 faithful of 3 drawn)
+College costs have been going up fast, and now almost everyone's left with a ton of student debt. Look, over the last few decades tuition actually grew way faster than inflation, partly because there's less public funding and more administration overhead. And we pushed almost everyone to borrow to get the degree, sometimes for a degree nobody even knew how to make money off. The fixes are in, let's cut the grants and make community college free. To make debt forgiveness a reality we'd have to chop a real chunk off public schools. That list's not getting shorter. Do it right and you keep both the cost down and the payoff worth it. Otherwise we're tucking students out of reach and denying them a chance at a better life.
+
+===== input 5 =====
+P(human): in 0.000  ->  out 0.509  | semantic 0.814
+(1 round, 6 faithful of 16 drawn)
+Mindful eating is a great way to develop a healthier relationship with food. The idea is slow, chew, and pay attention to every bite, so you're actually tuning in to the taste, texture, smell, anything. Eating slowly also gives your body time to register fullness, which is the most effective way to stop overeating. Put the phone down, turn off the TV, just focus on the meal. And honestly, listen to your stomach, not the binge-eating habit. None of this is rocket science. Approach meals with more awareness and intention and you'll enjoy food more, your digestion will process better, and you'll start the weight-loss game on the right foot.
+
+===== input 6 =====
+P(human): in 0.000  ->  out 0.857  | semantic 0.833
+(1 round, 1 faithful of 2 drawn)
+People who can actually prioritize also need to know when something isn't worth the effort. And the easy way to tell is looking honestly at what's actually important and what's just keeping us from doing what really matters. A dumb trick is just trying to cram the urgent stuff in first, because that feels efficient, but it slowly chips away at what we actually care about. The smart move is setting aside real time to focus on what actually drives results, and politely cutting off the lower-priority requests. That second part takes a ton of practice, because we're conditioned to agree to anything, even the trivial, so it's worth the slight discomfort of saying no. People who prioritize deliberately, not as a reflex but on their own time, are the ones who actually make real progress. They've wised up and avoided the autopilot mode where they're creaking along, fast but not accomplishing anything.
+
+===== input 7 =====
+P(human): in 0.000  ->  out 0.806  | semantic 0.851
+(1 round, 1 faithful of 1 drawn)
+Casablanca, released in 1942, usually gets the credit for being the greatest movie of all time. Michael Curtiz directed it, and Bogart and Bergman stars in it. It's set in Morocco during the war, and the script's a real page turner, full of memorable quotes, most of which we've heard in the movies. The wild part is, the ending wasn't even finalized when filming started. That didn't matter, because the picture actually pulled it off. It won the Academy Award for Best Picture. To me it keeps pulling together romance, a political plot, and a morality tale in a way that still feels resonant 70 years later.
+
+===== input 8 =====
+P(human): in 0.000  ->  out 0.597  | semantic 0.817
+(1 round, 5 faithful of 16 drawn)
+The minimum wage is one of those things that always gets people stirred up. Piling more money on low-wage workers should lift them out of poverty and start the economy moving, because they'll be spending the extra money fast. The critics keep churning the same old arguments, about whether employers will lay off workers or cut hours, and the research is a real mess, some studies find a slight boost in hiring, some find nothing. It's not a straightforward answer, and the right level will vary from region to region. Worth the slight discomfort of the debate.
+
+===== input 9 =====
+P(human): in 0.000  ->  out 0.972  | semantic 0.821
+(1 round, 2 faithful of 3 drawn)
+The oldest photograph actually belongs to Niepce, and he pulled one from his window around 1826 or '27. The catch is it took way too long, probably nights, which is why it's lit up on both sides of the buildings. His partner, Louis Daguerre, then worked on a much quicker process, the daguerreotype, and that knocked the exposure time way down. Which is why it worked, and why it quickly took off. The catch is every daguerreotype is unique, and you can't copy it. So it started off slow, the experiments built, and then it rewired how we documented, painted, and remembered.
+
+===== input 10 =====
+P(human): in 0.000  ->  out 0.693  | semantic 0.824
+(1 round, 8 faithful of 16 drawn)
+Lightning is one of nature's biggest show offs, and it's easy to see why. It happens when charges build up in storm clouds, and suddenly that charge gets big enough to shove a spark from the cloud down to the ground or up between clouds. A bolt of lightning can boil the air around it to temperatures hotter than the sun, which is why you get that flash and the thunder you hear. And it happens a million times a day, which is proof it's real. Researchers are still digging into how these things actually get triggered, some of it still feels mysterious. But the dangers it poses people and property are real, loud, and immediate. It's a truly incredible show of energy the weather world throws together.
+
+===== input 11 =====
+P(human): in 0.000  ->  out 0.945  | semantic 0.839
+(1 round, 2 faithful of 4 drawn)
+The Legend of Zelda: Ocarina of Time came out in 1998, on the Nintendo 64. A lot of people call it the first real action-adventure game that actually translated to 3D, and they've got a point. It was the first one that really nailed the three-dimensionality, and it also had a targeting system, which is the cool part, you're always locking onto the enemies during the battle, that nobody had ever heard of before. It was built around exploration, and it slowly revealed the story by the way the world looked, which is a shame because by today's standards a lot of it feels dated. It's worth more than the sum of the pieces, because you're basically setting the template three-dimensional action-adventure games would use for the next couple of decades.
+
+===== input 12 =====
+P(human): in 0.000  ->  out 0.441  | semantic 0.809
+(1 round, 3 faithful of 16 drawn)
+A ton of remote work has made digital collaboration the norm, and we built the tools that make it happen. Video calls, chat apps, docs people now use to share and edit each other's heads all the content they're working on. No exaggeration. These tools also open up a whole other layer of work, time zone differences and the need to keep up with each other's notifications. And let's be real, half the time the demands of the meeting feel like a never-ending loop, the caller's pauses and the like mired in the background. The boundary between work and personal time has gotten so blurry that honestly the distinction feels fuzzy. The good news is the clear stuff we write about it, the norms we put in place keep a lot of the downsides from creeping in. So yes, we built something that works, but we wouldn't have if we didn't put intentional effort into it.

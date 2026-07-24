@@ -1,0 +1,10 @@
+[examples] loading Qwen3-0.6B-Base (HIP)
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 71435.83it/s]
+[examples] done Qwen3-0.6B-Base (HIP)
+[examples] loading Qwen3-1.7B-Base (HIP)
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 225847.14it/s]
+[examples] done Qwen3-1.7B-Base (HIP)
+[examples] loading Qwen3-4B-Base (HIP)
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 129453.83it/s]
+[examples] done Qwen3-4B-Base (HIP)
+[examples] wrote paraphraser_examples.txt

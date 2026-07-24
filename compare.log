@@ -1,0 +1,23 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 18181.61it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+12 held-out AI essays | input mean P(human) = 0.000
+
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 266910.25it/s]
+wiki-trained (old)       mean P(human) out = 0.009 | mean semantic = 0.969
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 219105.43it/s]
+AI->human (new)          mean P(human) out = 0.579 | mean semantic = 0.835
+
+(input mean P(human) was 0.000; best-of-10, semantic floor 0.8)
+
+===== sample output — wiki-trained (old) (P(human) 0.01) =====
+The spread of misinformation online is a major challenge for democratic societies. False or misleading content can spread rapidly across social networks, influencing public opinion and eroding trust in institutions. Algorithms that prioritize engagement may inadvertently amplify sensational or divisive material, which is more likely to receive attention. This can lead to increased polarization and a diminished capacity for shared deliberation. Various remedies have been proposed, including fact-checking initiatives, platform accountability measures, and improved media literacy education. Howev
+
+===== sample output — AI->human (new) (P(human) 0.58) =====
+Great news! False or misleading info can really fast in the social networks, and it wrecks public trust and sets off that chill feeling around the institutions. The algorithms keep piling on the drama, and they sort of amplify the sensational stuff, which is a shame, because that leads to polarization and a hazing of the whole room. People have pitched fixes: better fact-checking, platform accountability, and teaching media literacy. But let's be real, scrubbing the whole thing would stifle a lot of legitimate speech, and that's a fine line to tread. The good news is, a vibrant information eco

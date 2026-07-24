@@ -1,0 +1,288 @@
+✓ Initialized. View run at 
+https://modal.com/apps/st-hou2020/main/ap-KY3W1ZWsqJHxKkQZ99jk7j
+Building image im-fbioFlORX1S8EGi3VRPis9
+
+=> Step 0: FROM base
+
+=> Step 1: RUN python -m pip install accelerate==1.1.1 huggingface_hub 'numpy<2' peft==0.13.2 safetensors sentence-transformers==3.3.1 torch==2.5.1 transformers==4.46.3
+Looking in indexes: http://pypi-mirror.modal.local:5555/simple
+Collecting accelerate==1.1.1
+  Downloading http://pypi-mirror.modal.local:5555/simple/accelerate/accelerate-1.1.1-py3-none-any.whl.metadata (19 kB)
+Collecting huggingface_hub
+  Downloading http://pypi-mirror.modal.local:5555/simple/huggingface-hub/huggingface_hub-1.21.0-py3-none-any.whl.metadata (14 kB)
+Collecting numpy<2
+  Downloading http://pypi-mirror.modal.local:5555/simple/numpy/numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting peft==0.13.2
+  Downloading http://pypi-mirror.modal.local:5555/simple/peft/peft-0.13.2-py3-none-any.whl.metadata (13 kB)
+Collecting safetensors
+  Downloading http://pypi-mirror.modal.local:5555/simple/safetensors/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.2 kB)
+Collecting sentence-transformers==3.3.1
+  Downloading http://pypi-mirror.modal.local:5555/simple/sentence-transformers/sentence_transformers-3.3.1-py3-none-any.whl.metadata (10 kB)
+Collecting torch==2.5.1
+  Downloading http://pypi-mirror.modal.local:5555/simple/torch/torch-2.5.1-cp311-cp311-manylinux1_x86_64.whl.metadata (28 kB)
+Collecting transformers==4.46.3
+  Downloading http://pypi-mirror.modal.local:5555/simple/transformers/transformers-4.46.3-py3-none-any.whl.metadata (44 kB)
+Collecting packaging>=20.0 (from accelerate==1.1.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/packaging/packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting psutil (from accelerate==1.1.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/psutil/psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (22 kB)
+Collecting pyyaml (from accelerate==1.1.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/pyyaml/pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting tqdm (from peft==0.13.2)
+  Downloading http://pypi-mirror.modal.local:5555/simple/tqdm/tqdm-4.68.3-py3-none-any.whl.metadata (57 kB)
+Collecting scikit-learn (from sentence-transformers==3.3.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/scikit-learn/scikit_learn-1.9.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+Collecting scipy (from sentence-transformers==3.3.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/scipy/scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting Pillow (from sentence-transformers==3.3.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/pillow/pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting filelock (from transformers==4.46.3)
+  Downloading http://pypi-mirror.modal.local:5555/simple/filelock/filelock-3.29.4-py3-none-any.whl.metadata (2.0 kB)
+Collecting huggingface_hub
+  Downloading http://pypi-mirror.modal.local:5555/simple/huggingface-hub/huggingface_hub-0.36.2-py3-none-any.whl.metadata (15 kB)
+Collecting regex!=2019.12.17 (from transformers==4.46.3)
+  Downloading http://pypi-mirror.modal.local:5555/simple/regex/regex-2026.6.28-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+Collecting requests (from transformers==4.46.3)
+  Downloading http://pypi-mirror.modal.local:5555/simple/requests/requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting tokenizers<0.21,>=0.20 (from transformers==4.46.3)
+  Downloading http://pypi-mirror.modal.local:5555/simple/tokenizers/tokenizers-0.20.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.7 kB)
+Collecting typing-extensions>=4.8.0 (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/typing-extensions/typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting networkx (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/networkx/networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting jinja2 (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/jinja2/jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/fsspec/fsspec-2026.6.0-py3-none-any.whl.metadata (10 kB)
+Collecting nvidia-cuda-nvrtc-cu12==12.4.127 (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-cuda-nvrtc-cu12/nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cuda-runtime-cu12==12.4.127 (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-cuda-runtime-cu12/nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cuda-cupti-cu12==12.4.127 (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-cuda-cupti-cu12/nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-cudnn-cu12==9.1.0.70 (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-cudnn-cu12/nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-cublas-cu12==12.4.5.8 (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-cublas-cu12/nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cufft-cu12==11.2.1.3 (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-cufft-cu12/nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-curand-cu12==10.3.5.147 (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-curand-cu12/nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cusolver-cu12==11.6.1.9 (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-cusolver-cu12/nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-cusparse-cu12==12.3.1.170 (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-cusparse-cu12/nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-nccl-cu12==2.21.5 (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-nccl-cu12/nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-nvtx-cu12==12.4.127 (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-nvtx-cu12/nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-nvjitlink-cu12==12.4.127 (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-nvjitlink-cu12/nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting triton==3.1.0 (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/triton/triton-3.1.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.3 kB)
+Collecting sympy==1.13.1 (from torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/sympy/sympy-1.13.1-py3-none-any.whl.metadata (12 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy==1.13.1->torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/mpmath/mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting hf-xet<2.0.0,>=1.1.3 (from huggingface_hub)
+  Downloading http://pypi-mirror.modal.local:5555/simple/hf-xet/hf_xet-1.5.1-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch==2.5.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/markupsafe/markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting charset_normalizer<4,>=2 (from requests->transformers==4.46.3)
+  Downloading http://pypi-mirror.modal.local:5555/simple/charset-normalizer/charset_normalizer-3.4.7-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+Collecting idna<4,>=2.5 (from requests->transformers==4.46.3)
+  Downloading http://pypi-mirror.modal.local:5555/simple/idna/idna-3.18-py3-none-any.whl.metadata (6.1 kB)
+Collecting urllib3<3,>=1.26 (from requests->transformers==4.46.3)
+  Downloading http://pypi-mirror.modal.local:5555/simple/urllib3/urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting certifi>=2023.5.7 (from requests->transformers==4.46.3)
+  Downloading http://pypi-mirror.modal.local:5555/simple/certifi/certifi-2026.6.17-py3-none-any.whl.metadata (2.5 kB)
+Collecting joblib>=1.4.0 (from scikit-learn->sentence-transformers==3.3.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/joblib/joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting narwhals>=2.0.1 (from scikit-learn->sentence-transformers==3.3.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/narwhals/narwhals-2.23.0-py3-none-any.whl.metadata (15 kB)
+Collecting threadpoolctl>=3.5.0 (from scikit-learn->sentence-transformers==3.3.1)
+  Downloading http://pypi-mirror.modal.local:5555/simple/threadpoolctl/threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/accelerate/accelerate-1.1.1-py3-none-any.whl (333 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/peft/peft-0.13.2-py3-none-any.whl (320 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/sentence-transformers/sentence_transformers-3.3.1-py3-none-any.whl (268 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/transformers/transformers-4.46.3-py3-none-any.whl (10.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.0/10.0 MB 493.8 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/torch/torch-2.5.1-cp311-cp311-manylinux1_x86_64.whl (906.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 906.5/906.5 MB 475.4 MB/s  0:00:01
+Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-cublas-cu12/nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl (363.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 363.4/363.4 MB 436.2 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-cuda-cupti-cu12/nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (13.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.8/13.8 MB 484.8 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-cuda-nvrtc-cu12/nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (24.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.6/24.6 MB 468.8 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-cuda-runtime-cu12/nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (883 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 883.7/883.7 kB 536.7 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-cudnn-cu12/nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl (664.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 664.8/664.8 MB 476.2 MB/s  0:00:01
+Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-cufft-cu12/nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_x86_64.whl (211.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 211.5/211.5 MB 465.6 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-curand-cu12/nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_x86_64.whl (56.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 MB 456.1 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-cusolver-cu12/nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_x86_64.whl (127.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 127.9/127.9 MB 383.8 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-cusparse-cu12/nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_x86_64.whl (207.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.5/207.5 MB 401.0 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-nccl-cu12/nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl (188.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 188.7/188.7 MB 402.8 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-nvjitlink-cu12/nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (21.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21.1/21.1 MB 360.8 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/nvidia-nvtx-cu12/nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (99 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/sympy/sympy-1.13.1-py3-none-any.whl (6.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 443.4 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/triton/triton-3.1.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (209.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 209.5/209.5 MB 393.0 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/huggingface-hub/huggingface_hub-0.36.2-py3-none-any.whl (566 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.4/566.4 kB 417.5 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/numpy/numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.3/18.3 MB 413.0 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/hf-xet/hf_xet-1.5.1-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 473.6 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/mpmath/mpmath-1.3.0-py3-none-any.whl (536 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 445.0 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/tokenizers/tokenizers-0.20.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 47.1 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/safetensors/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (516 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/fsspec/fsspec-2026.6.0-py3-none-any.whl (203 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/packaging/packaging-26.2-py3-none-any.whl (100 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/pyyaml/pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 612.5 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/regex/regex-2026.6.28-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (799 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 799.9/799.9 kB 641.2 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/tqdm/tqdm-4.68.3-py3-none-any.whl (78 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/typing-extensions/typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/filelock/filelock-3.29.4-py3-none-any.whl (42 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/jinja2/jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/markupsafe/markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/networkx/networkx-3.6.1-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 371.3 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/pillow/pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 441.8 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/psutil/psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/requests/requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/charset-normalizer/charset_normalizer-3.4.7-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (214 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/idna/idna-3.18-py3-none-any.whl (65 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/urllib3/urllib3-2.7.0-py3-none-any.whl (131 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/certifi/certifi-2026.6.17-py3-none-any.whl (133 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/scikit-learn/scikit_learn-1.9.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.3/9.3 MB 465.7 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/joblib/joblib-1.5.3-py3-none-any.whl (309 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/narwhals/narwhals-2.23.0-py3-none-any.whl (458 kB)
+Downloading http://pypi-mirror.modal.local:5555/simple/scipy/scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 366.6 MB/s  0:00:00
+Downloading http://pypi-mirror.modal.local:5555/simple/threadpoolctl/threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Installing collected packages: mpmath, urllib3, typing-extensions, tqdm, threadpoolctl, sympy, safetensors, regex, pyyaml, psutil, Pillow, packaging, nvidia-nvtx-cu12, nvidia-nvjitlink-cu12, nvidia-nccl-cu12, nvidia-curand-cu12, nvidia-cufft-cu12, nvidia-cuda-runtime-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-cupti-cu12, nvidia-cublas-cu12, numpy, networkx, narwhals, MarkupSafe, joblib, idna, hf-xet, fsspec, filelock, charset_normalizer, certifi, triton, scipy, requests, nvidia-cusparse-cu12, nvidia-cudnn-cu12, jinja2, scikit-learn, nvidia-cusolver-cu12, huggingface_hub, torch, tokenizers, transformers, accelerate, sentence-transformers, peft
+
+Successfully installed MarkupSafe-3.0.3 Pillow-12.3.0 accelerate-1.1.1 certifi-2026.6.17 charset_normalizer-3.4.7 filelock-3.29.4 fsspec-2026.6.0 hf-xet-1.5.1 huggingface_hub-0.36.2 idna-3.18 jinja2-3.1.6 joblib-1.5.3 mpmath-1.3.0 narwhals-2.23.0 networkx-3.6.1 numpy-1.26.4 nvidia-cublas-cu12-12.4.5.8 nvidia-cuda-cupti-cu12-12.4.127 nvidia-cuda-nvrtc-cu12-12.4.127 nvidia-cuda-runtime-cu12-12.4.127 nvidia-cudnn-cu12-9.1.0.70 nvidia-cufft-cu12-11.2.1.3 nvidia-curand-cu12-10.3.5.147 nvidia-cusolver-cu12-11.6.1.9 nvidia-cusparse-cu12-12.3.1.170 nvidia-nccl-cu12-2.21.5 nvidia-nvjitlink-cu12-12.4.127 nvidia-nvtx-cu12-12.4.127 packaging-26.2 peft-0.13.2 psutil-7.2.2 pyyaml-6.0.3 regex-2026.6.28 requests-2.34.2 safetensors-0.8.0 scikit-learn-1.9.0 scipy-1.17.1 sentence-transformers-3.3.1 sympy-1.13.1 threadpoolctl-3.6.0 tokenizers-0.20.3 torch-2.5.1 tqdm-4.68.3 transformers-4.46.3 triton-3.1.0 typing-extensions-4.15.0 urllib3-2.7.0
+
+[notice] A new release of pip is available: 25.2 -> 26.1.2
+[notice] To update, run: pip install --upgrade pip
+Saving image...
+Image saved, took 3.62s
+
+Built image im-fbioFlORX1S8EGi3VRPis9 in 74.63s
+
+
+✓ Created objects.
+├── 🔨 Created mount /Users/steven/hip_paraphraser/modal_grpo.py
+├── 🔨 Created mount /Users/steven/hip_paraphraser/data
+└── 🔨 Created function train_grpo.
+[modal] loading detector (desklib) + embedder ...
+[modal] loading base model ...
+Traceback (most recent call last):
+Stopping app - uncaught exception raised locally: ValueError('The checkpoint you are trying to load has model type `qwen3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.').
+  File "/usr/local/lib/python3.11/site-packages/transformers/models/auto/configuration_auto.py", line 1034, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+                   ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/transformers/models/auto/configuration_auto.py", line 736, in __getitem__
+    raise KeyError(key)
+KeyError: 'qwen3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/pkg/modal/_runtime/container_io_manager.py", line 915, in handle_input_exception
+    yield
+  File "/pkg/modal/_container_entrypoint.py", line 189, in run_input_sync
+    values = io_context.call_function_sync()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/pkg/modal/_runtime/container_io_manager.py", line 218, in call_function_sync
+    expected_value_or_values = self.finalized_function.callable(*args, **kwargs)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/modal_grpo.py", line 109, in train_grpo
+    model = AutoModelForCausalLM.from_pretrained(BASE, torch_dtype=torch.bfloat16).to(dev)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/transformers/models/auto/configuration_auto.py", line 1036, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `qwen3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /Users/steven/hip_paraphraser/modal_grpo.py:233 in main                      │
+│                                                                              │
+│   232 │   import json                                                        │
+│ ❱ 233 │   res = train_grpo.remote(grpo_steps=grpo_steps)                     │
+│   234 │   print("\n================ RESULT ================")                │
+│                                                                              │
+│ /opt/anaconda3/lib/python3.12/site-packages/modal/_object.py:45 in wrapped   │
+│                                                                              │
+│    44 │   │   await self.hydrate()                                           │
+│ ❱  45 │   │   return await method(self, *args, **kwargs)                     │
+│    46                                                                        │
+│                                                                              │
+│ /opt/anaconda3/lib/python3.12/site-packages/modal/_functions.py:1765 in      │
+│ remote                                                                       │
+│                                                                              │
+│   1764 │   │                                                                 │
+│ ❱ 1765 │   │   return await self._call_function(args, kwargs)                │
+│   1766                                                                       │
+│                                                                              │
+│ /opt/anaconda3/lib/python3.12/site-packages/modal/_functions.py:1703 in      │
+│ _call_function                                                               │
+│                                                                              │
+│   1702 │   │                                                                 │
+│ ❱ 1703 │   │   return await invocation.run_function()                        │
+│   1704                                                                       │
+│                                                                              │
+│ /opt/anaconda3/lib/python3.12/site-packages/modal/_functions.py:291 in       │
+│ run_function                                                                 │
+│                                                                              │
+│    290 │   │   │   item = await self._get_single_output()                    │
+│ ❱  291 │   │   │   return await _process_result(item.result, item.data_forma │
+│    292                                                                       │
+│                                                                              │
+│ /opt/anaconda3/lib/python3.12/site-packages/modal/_utils/function_utils.py:5 │
+│ 48 in _process_result                                                        │
+│                                                                              │
+│   547 │   │   │                                                              │
+│ ❱ 548 │   │   │   raise exc_with_hints(exc)                                  │
+│   549                                                                        │
+│                                                                              │
+│     ...Remote call to Modal Function (ta-01KWFQA2AHQRXKRAXNGW7W1NKR)...      │
+│                                                                              │
+│ /root/modal_grpo.py:109 in train_grpo                                        │
+│                                                                              │
+│ ❱ 109 model = AutoModelForCausalLM.from_pretrained(BASE, torch_dtype=torch.b │
+│                                                                              │
+│                                                                              │
+│ /usr/local/lib/python3.11/site-packages/transformers/models/auto/auto_factor │
+│ y.py:526 in from_pretrained                                                  │
+│                                                                              │
+│ ❱ 526 config, kwargs = AutoConfig.from_pretrained(                           │
+│                                                                              │
+│                                                                              │
+│ /usr/local/lib/python3.11/site-packages/transformers/models/auto/configurati │
+│ on_auto.py:1036 in from_pretrained                                           │
+│                                                                              │
+│ ❱ 1036 raise ValueError(                                                     │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ValueError: The checkpoint you are trying to load has model type `qwen3` but 
+Transformers does not recognize this architecture. This could be because of an 
+issue with the checkpoint, or because your version of Transformers is out of 
+date.

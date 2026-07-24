@@ -1,0 +1,8 @@
+[fig1] 50 prefixes
+[fig1] generating BASE continuations (Qwen/Qwen3-1.7B-Base)
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 53970.82it/s]
+[fig1] generating INSTRUCT continuations (Qwen/Qwen3-1.7B)
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 9 files:  22%|██▏       | 2/9 [00:00<00:00,  9.58it/s]Fetching 9 files:  44%|████▍     | 4/9 [03:44<05:29, 65.92s/it]Fetching 9 files: 100%|██████████| 9/9 [03:44<00:00, 24.91s/it]
+[fig1] wrote 50 -> /Users/steven/hip_paraphraser/continuations.jsonl
+[fig1] next:  GPTZERO_API_KEY=... python replicate_fig1.py score

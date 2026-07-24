@@ -1,0 +1,111 @@
+AI->human adapter outputs on held-out AI essays — paste into GPTZero.
+model: Qwen3-1.7B-Base + adapters_aihuman, one-pass best-of-N.
+======================================================================
+
+
+##### ESSAY 1  (P(human): in 0.000  ->  out 0.000) #####
+
+--- ORIGINAL AI ---
+The spread of misinformation online poses a significant challenge to democratic societies. False or misleading content can travel rapidly across social networks, shaping public opinion and eroding trust in institutions. Furthermore, algorithms that prioritize engagement may inadvertently amplify sensational or divisive material, since such content tends to attract attention. The consequences can include increased polarization and a diminished capacity for shared deliberation. Various remedies have been proposed, including fact-checking initiatives, platform accountability measures, and improved media literacy education. However, efforts to combat misinformation must be weighed carefully against concerns about free expression. In conclusion, preserving a healthy information ecosystem is essential to the functioning of democracy, though doing so without infringing on legitimate speech remains a delicate balance.
+
+--- HUMANIZED ---
+The spread of misinformation online poses a significant challenge to democratic societies. False or misleading content can travel rapidly across social networks, shaping public opinion and eroding trust in institutions. Furthermore, algorithms that prioritize engagement may inadvertently amplify sensational or divisive material, since such content tends to attract attention. The consequences can include increased polarization and a diminished capacity for shared deliberation. Various remedies have been proposed, including fact-checking initiatives, platform accountability measures, and improved media literacy education. However, efforts to combat misinformation must be weighed carefully against concerns about free expression. In conclusion, preserving a healthy information ecosystem is essential to the functioning of democracy, though doing so without infringing on legitimate speech remains a delicate balance.
+
+
+##### ESSAY 2  (P(human): in 0.000  ->  out 0.518  | semantic 0.804) #####
+
+--- ORIGINAL AI ---
+Proposals for a wealth tax, levied on the total net assets of the very richest households, have gained attention as a means of addressing inequality and funding public programs. Supporters argue that such a tax could raise substantial revenue while reducing the concentration of wealth at the top. However, opponents raise practical concerns, noting that valuing illiquid assets is difficult and that the wealthy may relocate or restructure their holdings to avoid the levy. Moreover, several European countries that once imposed wealth taxes have since repealed them, citing administrative challenges and disappointing revenue. In conclusion, while a wealth tax holds theoretical appeal, its real-world implementation presents significant obstacles that policymakers would need to address carefully.
+
+--- HUMANIZED ---
+A wealth tax, pegged to the total net worth of the richest households, has been getting a lot of attention, and the reasons aren't mysterious. People love the idea, they stand for fairness, and they think it could fund public programs. The catch is valuing the stuff we don't own is a messy job, and the rich might have done something to make their holdings less liquid, which still tricks the tax. A couple of European countries that used to charge such taxes have since ditched them, and the why wasn't immediately obvious. So a wealth tax has a theory that fits, but the reality is rough and the hills you need to climb are real.
+
+
+##### ESSAY 3  (P(human): in 0.000  ->  out 0.052  | semantic 0.839) #####
+
+--- ORIGINAL AI ---
+Caring for houseplants is a popular and rewarding way to bring life and color into one's living space. For beginners, it is wise to select hardy, low-maintenance varieties such as the snake plant, pothos, or ZZ plant, all of which tolerate a degree of neglect. Moreover, one of the most common mistakes among novice plant owners is overwatering, which can cause the roots to rot. It is therefore advisable to allow the soil to dry partially between waterings and to ensure that pots have adequate drainage. Understanding each plant's light requirements is equally important, as some species thrive in bright light while others prefer shade. In conclusion, with a little attention and patience, anyone can successfully maintain healthy houseplants and enjoy the calming, aesthetic benefits they bring to a home.
+
+--- HUMANIZED ---
+Houseplants are a big deal, and they're an easy, fulfilling way to bring color and life to your place. If you're just getting started, go with the hardy, low-maintenance ones, the snake plant, pothos, or ZZ plant all of them can take a bit of care, but they'll survive. The biggest mistake rookie plant owners make is watering it dry, which slowly kills the roots. So let the soil dry a little between waters, and make sure the pots have drainage. And keep an eye on how much light the plant needs, some species want bright sun, some need shade. With a little patience and a little effort, you can keep them alive and the plants start pulling you in, calm and aesthetic, they're a real upgrade.
+
+
+##### ESSAY 4  (P(human): in 0.000  ->  out 0.846  | semantic 0.820) #####
+
+--- ORIGINAL AI ---
+The rising cost of higher education has left many graduates burdened with substantial student debt, raising questions about the value and accessibility of a college degree. Over the past few decades, tuition has increased far faster than general inflation, driven in part by reduced public funding and growing administrative expenses. Furthermore, the expectation that a degree is necessary for a good career has pushed many students to borrow heavily, sometimes for credentials of uncertain value. Proposed responses range from expanding grant aid to making community college tuition-free. However, broad debt forgiveness remains contentious, with critics questioning its fairness and cost. In conclusion, ensuring that higher education remains both affordable and worthwhile is essential to economic mobility and opportunity.
+
+--- HUMANIZED ---
+College costs have been going up fast, and now almost everyone's left with a ton of student debt. Look, over the last few decades tuition actually grew way faster than inflation, partly because there's less public funding and more administration overhead. And we pushed almost everyone to borrow to get the degree, sometimes for a degree nobody even knew how to make money off. The fixes are in, let's cut the grants and make community college free. To make debt forgiveness a reality we'd have to chop a real chunk off public schools. That list's not getting shorter. Do it right and you keep both the cost down and the payoff worth it. Otherwise we're tucking students out of reach and denying them a chance at a better life.
+
+
+##### ESSAY 5  (P(human): in 0.000  ->  out 0.509  | semantic 0.814) #####
+
+--- ORIGINAL AI ---
+Practicing mindful eating is an effective approach to developing a healthier relationship with food. Rather than consuming meals quickly or while distracted, mindful eating encourages individuals to slow down and pay close attention to the taste, texture, and aroma of their food. Moreover, eating slowly allows the body sufficient time to register feelings of fullness, which can help prevent overeating. It is recommended to minimize distractions during meals by turning off the television and setting aside one's phone. Paying attention to genuine hunger and satiety cues, rather than eating out of boredom or habit, is also an important component of this practice. In conclusion, by approaching meals with greater awareness and intention, individuals can enhance their enjoyment of food while supporting better digestion and more balanced eating patterns.
+
+--- HUMANIZED ---
+Mindful eating is a great way to develop a healthier relationship with food. The idea is slow, chew, and pay attention to every bite, so you're actually tuning in to the taste, texture, smell, anything. Eating slowly also gives your body time to register fullness, which is the most effective way to stop overeating. Put the phone down, turn off the TV, just focus on the meal. And honestly, listen to your stomach, not the binge-eating habit. None of this is rocket science. Approach meals with more awareness and intention and you'll enjoy food more, your digestion will process better, and you'll start the weight-loss game on the right foot.
+
+
+##### ESSAY 6  (P(human): in 0.000  ->  out 0.857  | semantic 0.833) #####
+
+--- ORIGINAL AI ---
+Effective prioritization is essential for anyone managing a heavy workload. Not all tasks carry equal importance, and treating them as if they do leads to wasted effort. Moreover, distinguishing between urgent and important tasks helps individuals focus on what truly drives results. A common pitfall is allowing urgent but low-value tasks to crowd out work that matters more in the long run. However, prioritization requires regular review, since circumstances and deadlines shift frequently. Furthermore, learning to say no to lower-priority requests protects the time needed for meaningful work. In conclusion, those who prioritize deliberately rather than reacting to whatever feels most pressing in the moment are better positioned to accomplish their most important goals, avoiding the trap of staying busy without making genuine progress.
+
+--- HUMANIZED ---
+People who can actually prioritize also need to know when something isn't worth the effort. And the easy way to tell is looking honestly at what's actually important and what's just keeping us from doing what really matters. A dumb trick is just trying to cram the urgent stuff in first, because that feels efficient, but it slowly chips away at what we actually care about. The smart move is setting aside real time to focus on what actually drives results, and politely cutting off the lower-priority requests. That second part takes a ton of practice, because we're conditioned to agree to anything, even the trivial, so it's worth the slight discomfort of saying no. People who prioritize deliberately, not as a reflex but on their own time, are the ones who actually make real progress. They've wised up and avoided the autopilot mode where they're creaking along, fast but not accomplishing anything.
+
+
+##### ESSAY 7  (P(human): in 0.000  ->  out 0.806  | semantic 0.851) #####
+
+--- ORIGINAL AI ---
+Casablanca, released in 1942, is frequently cited as one of the greatest films in the history of American cinema. Directed by Michael Curtiz and starring Humphrey Bogart and Ingrid Bergman, the film is set in the Moroccan city during the early years of the Second World War. Moreover, the screenplay is celebrated for its memorable dialogue, much of which has entered the broader cultural lexicon. The production itself was somewhat chaotic, as the ending had not been finalized when filming began. However, this uncertainty did not undermine the final result, which won the Academy Award for Best Picture. In conclusion, Casablanca endures because it balances romance, political intrigue, and moral sacrifice in a manner that continues to resonate with audiences nearly a century after its initial release.
+
+--- HUMANIZED ---
+Casablanca, released in 1942, usually gets the credit for being the greatest movie of all time. Michael Curtiz directed it, and Bogart and Bergman stars in it. It's set in Morocco during the war, and the script's a real page turner, full of memorable quotes, most of which we've heard in the movies. The wild part is, the ending wasn't even finalized when filming started. That didn't matter, because the picture actually pulled it off. It won the Academy Award for Best Picture. To me it keeps pulling together romance, a political plot, and a morality tale in a way that still feels resonant 70 years later.
+
+
+##### ESSAY 8  (P(human): in 0.000  ->  out 0.597  | semantic 0.817) #####
+
+--- ORIGINAL AI ---
+The minimum wage remains one of the most debated topics in economic policy. Advocates argue that raising it lifts low-income workers out of poverty and stimulates spending, as those workers tend to spend additional income quickly. However, critics warn that mandating higher wages may lead employers to reduce hiring or cut hours, potentially harming the very people the policy intends to help. The empirical evidence is mixed, with some studies finding modest employment effects and others finding little to none. Moreover, the appropriate level of the minimum wage likely depends on local economic conditions, which vary considerably across regions. In conclusion, the minimum wage involves genuine trade-offs that defy simple answers and merit careful, context-specific consideration.
+
+--- HUMANIZED ---
+The minimum wage is one of those things that always gets people stirred up. Piling more money on low-wage workers should lift them out of poverty and start the economy moving, because they'll be spending the extra money fast. The critics keep churning the same old arguments, about whether employers will lay off workers or cut hours, and the research is a real mess, some studies find a slight boost in hiring, some find nothing. It's not a straightforward answer, and the right level will vary from region to region. Worth the slight discomfort of the debate.
+
+
+##### ESSAY 9  (P(human): in 0.000  ->  out 0.972  | semantic 0.821) #####
+
+--- ORIGINAL AI ---
+The earliest surviving photograph is generally attributed to Joseph Nicephore Niepce, who produced an image of the view from his window in approximately 1826 or 1827. The exposure required is believed to have lasted many hours, which explains why the lighting appears to fall on multiple sides of the buildings. Moreover, Niepce's collaborator Louis Daguerre later developed a more practical process, the daguerreotype, which dramatically reduced exposure times. This advance made portraiture feasible and contributed to the rapid popularization of photography. However, the daguerreotype produced a unique image that could not be easily reproduced. In conclusion, these early experiments laid the groundwork for a medium that would transform documentation, art, and personal memory across the subsequent two centuries.
+
+--- HUMANIZED ---
+The oldest photograph actually belongs to Niepce, and he pulled one from his window around 1826 or '27. The catch is it took way too long, probably nights, which is why it's lit up on both sides of the buildings. His partner, Louis Daguerre, then worked on a much quicker process, the daguerreotype, and that knocked the exposure time way down. Which is why it worked, and why it quickly took off. The catch is every daguerreotype is unique, and you can't copy it. So it started off slow, the experiments built, and then it rewired how we documented, painted, and remembered.
+
+
+##### ESSAY 10  (P(human): in 0.000  ->  out 0.693  | semantic 0.824) #####
+
+--- ORIGINAL AI ---
+Lightning is one of the most powerful and dramatic phenomena in nature. It occurs when electrical charges build up within storm clouds, eventually creating a discharge that travels between the cloud and the ground or between clouds. A single bolt of lightning can heat the surrounding air to temperatures far hotter than the surface of the sun, producing the bright flash and the thunder that follows. Moreover, lightning strikes the Earth millions of times each day, demonstrating the immense electrical activity within our atmosphere. Furthermore, scientists continue to study the precise mechanisms that trigger these discharges, as some aspects remain poorly understood. However, lightning also poses significant dangers to people and property. In conclusion, this awe-inspiring display of natural energy reflects the dynamic and often unpredictable forces that shape our planet's weather systems.
+
+--- HUMANIZED ---
+Lightning is one of nature's biggest show offs, and it's easy to see why. It happens when charges build up in storm clouds, and suddenly that charge gets big enough to shove a spark from the cloud down to the ground or up between clouds. A bolt of lightning can boil the air around it to temperatures hotter than the sun, which is why you get that flash and the thunder you hear. And it happens a million times a day, which is proof it's real. Researchers are still digging into how these things actually get triggered, some of it still feels mysterious. But the dangers it poses people and property are real, loud, and immediate. It's a truly incredible show of energy the weather world throws together.
+
+
+##### ESSAY 11  (P(human): in 0.000  ->  out 0.945  | semantic 0.839) #####
+
+--- ORIGINAL AI ---
+The Legend of Zelda: Ocarina of Time, released by Nintendo in 1998 for the Nintendo 64, is often described as one of the most influential video games ever produced. It was among the first major titles to translate an action-adventure series into a fully three-dimensional environment. Furthermore, the game introduced a targeting system that allowed players to maintain focus on enemies during combat, a mechanic widely imitated thereafter. Its world rewarded exploration and gradually revealed its narrative through environmental detail. However, by contemporary standards, some of its design conventions feel dated. In conclusion, Ocarina of Time is remembered not merely for its quality but for establishing templates that subsequent three-dimensional adventure games would adopt for decades.
+
+--- HUMANIZED ---
+The Legend of Zelda: Ocarina of Time came out in 1998, on the Nintendo 64. A lot of people call it the first real action-adventure game that actually translated to 3D, and they've got a point. It was the first one that really nailed the three-dimensionality, and it also had a targeting system, which is the cool part, you're always locking onto the enemies during the battle, that nobody had ever heard of before. It was built around exploration, and it slowly revealed the story by the way the world looked, which is a shame because by today's standards a lot of it feels dated. It's worth more than the sum of the pieces, because you're basically setting the template three-dimensional action-adventure games would use for the next couple of decades.
+
+
+##### ESSAY 12  (P(human): in 0.000  ->  out 0.441  | semantic 0.809) #####
+
+--- ORIGINAL AI ---
+The widespread adoption of remote work has dramatically increased reliance on digital collaboration tools. Video conferencing, instant messaging, and shared document platforms now form the backbone of distributed teams. These technologies enable employees to coordinate across time zones and maintain productivity outside the traditional office. However, the proliferation of communication channels has introduced new challenges. Moreover, many workers report a sense of fatigue stemming from back-to-back video meetings and the expectation of constant availability. Furthermore, the boundary between professional and personal life has become increasingly blurred. Nevertheless, organizations that establish clear norms around communication and respect employees' time can mitigate these downsides. In conclusion, collaboration tools have made remote work viable at scale, but realizing their full benefit requires intentional practices that prioritize focus and well-being over perpetual connectivity.
+
+--- HUMANIZED ---
+A ton of remote work has made digital collaboration the norm, and we built the tools that make it happen. Video calls, chat apps, docs people now use to share and edit each other's heads all the content they're working on. No exaggeration. These tools also open up a whole other layer of work, time zone differences and the need to keep up with each other's notifications. And let's be real, half the time the demands of the meeting feel like a never-ending loop, the caller's pauses and the like mired in the background. The boundary between work and personal time has gotten so blurry that honestly the distinction feels fuzzy. The good news is the clear stuff we write about it, the norms we put in place keep a lot of the downsides from creeping in. So yes, we built something that works, but we wouldn't have if we didn't put intentional effort into it.

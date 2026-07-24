@@ -1,0 +1,29 @@
+Base-model paraphrasers (HIP, arXiv:2605.19516) — paste each block into GPTZero.
+Every paraphraser is a BASE model from the paper. 6 iterative rounds each.
+========================================================================
+
+
+########## SOURCE 1 — ORIGINAL AI TEXT ##########
+Off the coast of the United States, an extensive network of buoys is maintained by the National Data Buoy Center, with the United States Coast Guard handling their deployment and upkeep. In South Africa, the South African Weather Service deploys and recovers its own buoys, while the Meteorological Service of New Zealand carries out the same role for that country. Environment Canada operates and deploys buoys on behalf of Canada, and the Met Office in Great Britain places drifting buoys throughout both the northern and southern Atlantic oceans.
+
+----- paraphraser: Qwen3-0.6B-Base (HIP) -----
+On the side of the United States in the Coastal Zone, a large network of buoats is kept by the National Data Buoy Center, in coordination with the United States Coast Guard, covers all the United States Coast Guard routes. South African Weather Service deploys and recovers buoats, and the Meteorological Service of New Zealand adapts this task to meet the needs of that country's users. Environment Canada operates and deploys buoats for Canada and the Met Office in Great Britain floats drifting buoats over the entire north and southern Atlantic oceans.
+
+----- paraphraser: Qwen3-1.7B-Base (HIP) -----
+Above all, it is a matter of measurement, a matter of filling out the scales, in the North and South of the United States and South Africa, the South African Weather Service operates and collects its own buoys, and the Meteorological Service of New Zealand conducts the same task for that country. Environment Canada manages and deploys buoys for Canada, and the Met Office in Great Britain places drifting buoys throughout both the northern and southern Atlantic oceans.
+
+----- paraphraser: Qwen3-4B-Base (HIP) -----
+The National Data Buoy Center (NDBC), operated by the United States Coast Guard, operates a large network of buoys along the coast. The South African Weather Service, however, must independently deploy and recover buoys. The Meteorological Service of New Zealand also operates and deploys buoys for the country. Environment Canada operates and deploys buoys for Canada. The Met Office in Great Britain, meanwhile, drifts buoys in both the northern and southern Atlantic oceans.
+
+
+########## SOURCE 2 — ORIGINAL AI TEXT ##########
+There were numerous other versions of the NS-10, the most well-known being the "NS-10M Studio" and the "NS-10M Pro," both released in 1987. Technically identical to the "Studio," the "Pro" comes equipped with a speaker grille and is intended to be positioned vertically.
+
+----- paraphraser: Qwen3-0.6B-Base (HIP) -----
+Several variants of the NS – 10 were known in particular, the " NS – 10M Studio " and the " NS – 10M Pro ", both published in 1987. The " Studio " and " NS – 10M Pro " are technically identical to the " Studio ", and the " Pro " is built to be mounted vertically.
+
+----- paraphraser: Qwen3-1.7B-Base (HIP) -----
+The NS-10 was also available in other variants, including the " NS-10M Studio " and the " NS-10M Pro ", which were released in 1987. The " Studio " and " Pro " are functionally equivalent, but the " Pro " has a speaker grille and is intended to be mounted vertically.
+
+----- paraphraser: Qwen3-4B-Base (HIP) -----
+NS-10M Studio and NS-10M Pro are variants of the NS-10, both released in 1987. The " Pro " has a speaker grille and is designed to be used vertically.

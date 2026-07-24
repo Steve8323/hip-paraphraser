@@ -1,0 +1,13 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/st-hou2020/main/ap-hvIJ3m1ZxNwxApNPlh3THx
+✓ Created objects.
+├── 🔨 Created mount /Users/steven/hip_paraphraser/modal_grpo.py
+├── 🔨 Created mount /Users/steven/hip_paraphraser/data
+└── 🔨 Created function train_grpo.
+SPAWNED function call id: fc-01KWFXNEHTKE1XDFDVDN34FX9E
+Runs in the cloud independently. When done, fetch results with:
+  modal volume get hip-grpo-adapter results.json -
+[modal-client] 2026-07-01T18:44:25-0400 Timed out waiting for final app logs.
+✓ App completed. View run at 
+https://modal.com/apps/st-hou2020/main/ap-hvIJ3m1ZxNwxApNPlh3THx

@@ -1,0 +1,83 @@
+{
+  "examples": "paraphraser_examples_large.json",
+  "rounds": 10,
+  "semantic_metric": "embedding cosine (all-MiniLM-L6-v2)",
+  "agg": {
+    "Qwen3-0.6B-Base (HIP)": {
+      "phuman_src": 9.377797444661459e-06,
+      "phuman_out": 0.0006572802861531576,
+      "d_phuman": 0.0006479024887084961,
+      "semantic": 0.939001719156901,
+      "n": 3
+    },
+    "Qwen3-1.7B-Base (HIP)": {
+      "phuman_src": 9.377797444661459e-06,
+      "phuman_out": 1.5695889790852863e-05,
+      "d_phuman": 6.318092346191406e-06,
+      "semantic": 0.973982016245524,
+      "n": 3
+    }
+  },
+  "rows": [
+    {
+      "model": "Qwen3-0.6B-Base (HIP)",
+      "src": 0,
+      "src_text": "The rise of remote work has fundamentally transformed the modern professional landscape, reshaping not only where employees perform their duties but also how organizations conceptualize productivity and collaboration. In recent years, companies across virtually every industry have embraced flexible arrangements, recognizing that talent is no longer confined to a single geographic location. This shift has yielded numerous benefits, including reduced commuting times, improved work-life balance, and access to a broader, more diverse pool of candidates. However, it is important to acknowledge that remote work also presents significant challenges. Maintaining team cohesion, fostering spontaneous communication, and preventing employee isolation require deliberate effort and thoughtful planning. Furthermore, organizations must invest in robust digital infrastructure and cultivate a culture of trust to ensure that distributed teams remain engaged and accountable. As the workplace continues to evolve, it is clear that the most successful companies will be those that strike a careful balance between flexibility and structure, leveraging technology to empower their workforce while preserving the human connections that drive innovation and long-term success.",
+      "out_text": "The evolution of remote work has fundamentally changed the modern professional climate, changing the tasks employees perform and the company's productivity and collaboration goals. In recent years, companies from virtually every industry have embraced flexible arrangements, realizing that talent is not fixed to a single geographic location. This has offered numerous benefits, including reduced commuting times, better work-life balance and access to a larger pool of candidates. However, remote work also presents serious problems. Maintaining team cohesion, fostering spontaneous communication and retaining employee isolation requires careful planning and appropriate implementation. Organizations must invest in strong digital infrastructure and foster a culture of trust to ensure that distributed teams are engaged and accountable. The workplace, meanwhile, has been accelerating in change, and it is clear that the more successful companies will be able to fulfill the flexibility and structure requirements of their workforce, and preserve the human bonds that foster innovation and longevity success.",
+      "phuman_src": 8.463859558105469e-06,
+      "phuman_out": 0.00031256675720214844,
+      "d_phuman": 0.00030410289764404297,
+      "semantic": 0.9661329984664917
+    },
+    {
+      "model": "Qwen3-0.6B-Base (HIP)",
+      "src": 1,
+      "src_text": "Climate change represents one of the most pressing challenges facing humanity in the twenty-first century, demanding urgent and coordinated action across every sector of society. The scientific consensus is unequivocal: rising global temperatures, driven primarily by human activities such as the burning of fossil fuels, are contributing to a cascade of environmental consequences. These include more frequent and severe weather events, rising sea levels, and the disruption of fragile ecosystems. Addressing this crisis requires a multifaceted approach that encompasses both mitigation and adaptation strategies. On one hand, governments and industries must accelerate the transition to renewable energy sources, invest in sustainable infrastructure, and implement policies that reduce carbon emissions. On the other hand, communities must prepare for the impacts that are already unavoidable by building resilience and protecting vulnerable populations. Ultimately, the path forward will require unprecedented cooperation among nations, businesses, and individuals alike, as well as a fundamental rethinking of our relationship with the natural world.",
+      "out_text": "Climate change is one of the more urgent threats to humanity in the twentieth century, requiring urgent and coordinated actions from all sectors of society. The scientific consensus is clear: increasing global temperatures, largely caused by human activities such as the burning of fossil fuels, are leading to various environmental effects. These include more frequent and severe weather events, rising sea levels, and disruptions to fragile ecosystems. A diverse crisis solution approach will require a multi-layered approach that combines mitigation and adaptation measures. Governments and industries must quickly turn out of renewable energy sources, invest in sustainable infrastructure and adopt policies that reduce carbon emissions. The way forward will need incredibly urgent cooperation from nations, businesses and individuals all alike, and a fundamental rethink of our relationship with the natural world.",
+      "phuman_src": 9.417533874511719e-06,
+      "phuman_out": 0.00022226572036743164,
+      "d_phuman": 0.00021284818649291992,
+      "semantic": 0.9329071044921875
+    },
+    {
+      "model": "Qwen3-0.6B-Base (HIP)",
+      "src": 2,
+      "src_text": "Artificial intelligence is poised to revolutionize the field of education, offering unprecedented opportunities to personalize learning and enhance student outcomes. By leveraging sophisticated algorithms and vast amounts of data, intelligent tutoring systems can adapt to the unique needs of each learner, providing tailored feedback and support in real time. This capability holds tremendous promise for addressing longstanding inequities in education, as students who might otherwise lack access to individualized instruction can benefit from on-demand assistance. Moreover, AI-powered tools can alleviate the administrative burden on educators, freeing them to focus on the creative and interpersonal aspects of teaching that machines cannot replicate. Nevertheless, the integration of artificial intelligence into classrooms is not without its concerns. Questions surrounding data privacy, algorithmic bias, and the potential erosion of critical thinking skills must be carefully considered. As educational institutions navigate this transformative era, it is essential that they adopt a thoughtful and ethical approach, ensuring that technology serves to augment rather than diminish the invaluable role of human educators.",
+      "out_text": "Human intelligence may revolutionize the field of education, offering increasingly personalized learning experiences and improving student performance. Intelligent tutoring systems use sophisticated algorithms and massive amounts of data to tailor feedback and support in real time. Students who might otherwise lack access to individualized instruction can benefit from on-demand help. AI-powered tools may alleviate the administrative burden on educators, who can focus on the creative and interpersonal aspects of teaching, which machines cannot duplicate. The integration of artificial intelligence into classrooms is not entirely without concerns. Data privacy, algorithmic bias, and the erosion of critical thinking skills must be carefully considered and incorporated into educational institutions ' hands of human educators.",
+      "phuman_src": 1.0251998901367188e-05,
+      "phuman_out": 0.0014370083808898926,
+      "d_phuman": 0.0014267563819885254,
+      "semantic": 0.9179650545120239
+    },
+    {
+      "model": "Qwen3-1.7B-Base (HIP)",
+      "src": 0,
+      "src_text": "The rise of remote work has fundamentally transformed the modern professional landscape, reshaping not only where employees perform their duties but also how organizations conceptualize productivity and collaboration. In recent years, companies across virtually every industry have embraced flexible arrangements, recognizing that talent is no longer confined to a single geographic location. This shift has yielded numerous benefits, including reduced commuting times, improved work-life balance, and access to a broader, more diverse pool of candidates. However, it is important to acknowledge that remote work also presents significant challenges. Maintaining team cohesion, fostering spontaneous communication, and preventing employee isolation require deliberate effort and thoughtful planning. Furthermore, organizations must invest in robust digital infrastructure and cultivate a culture of trust to ensure that distributed teams remain engaged and accountable. As the workplace continues to evolve, it is clear that the most successful companies will be those that strike a careful balance between flexibility and structure, leveraging technology to empower their workforce while preserving the human connections that drive innovation and long-term success.",
+      "out_text": "The growing prevalence of remote work has fundamentally changed priorities for employees and businesses, and had transformed the way productivity and collaboration were carried out. Businesses in virtually every industry have embraced flexible work schedules, recognizing that talent was no longer constrained by a single geographic location. This has led to a host of benefits, including reduced commuting times, better work-life balance and increased access to a more diverse, global pool of candidates. However, remote work also has its own set of challenges. Building team cohesion, fostering spontaneous communication and preventing employee isolation require careful planning and thoughtful consideration. Additionally, organizations must invest in robust digital infrastructure and foster a culture of trust to ensure that distributed teams are engaged and productive. As the workplace continues to evolve, it is clear that the most successful companies will be those that can find that sweet spot between flexibility and structure, leveraging technology to empower their workforce while maintaining the human connections that drive innovation and long-term success.",
+      "phuman_src": 8.463859558105469e-06,
+      "phuman_out": 1.5020370483398438e-05,
+      "d_phuman": 6.556510925292969e-06,
+      "semantic": 0.9761934876441956
+    },
+    {
+      "model": "Qwen3-1.7B-Base (HIP)",
+      "src": 1,
+      "src_text": "Climate change represents one of the most pressing challenges facing humanity in the twenty-first century, demanding urgent and coordinated action across every sector of society. The scientific consensus is unequivocal: rising global temperatures, driven primarily by human activities such as the burning of fossil fuels, are contributing to a cascade of environmental consequences. These include more frequent and severe weather events, rising sea levels, and the disruption of fragile ecosystems. Addressing this crisis requires a multifaceted approach that encompasses both mitigation and adaptation strategies. On one hand, governments and industries must accelerate the transition to renewable energy sources, invest in sustainable infrastructure, and implement policies that reduce carbon emissions. On the other hand, communities must prepare for the impacts that are already unavoidable by building resilience and protecting vulnerable populations. Ultimately, the path forward will require unprecedented cooperation among nations, businesses, and individuals alike, as well as a fundamental rethinking of our relationship with the natural world.",
+      "out_text": "The impacts of climate change, one of the most urgent challenges facing humanity in the twenty-first century \u2014 which demands immediate and collective action from all sectors of society \u2014 are supported by scientific consensus that rising global temperatures, largely due to human activities such as the burning of fossil fuels, are causing a range of environmental impacts. This includes more frequent and more intense weather events, rising sea levels and ecosystem disruption. Mitigating this crisis will require a multifaceted approach, involving reduction and adaptation strategies. Governments and industries must come together to speed up the transition to renewable energy sources, invest in sustainable infrastructure and adopt policies to reduce carbon emissions. Meanwhile, communities must prepare for the inevitable effects by building resilience and protecting vulnerable populations. Ultimately, the future will depend on unprecedented collaboration between nations, businesses and individuals, and a fundamental rethinking of our relationship with the natural world.",
+      "phuman_src": 9.417533874511719e-06,
+      "phuman_out": 1.2516975402832031e-05,
+      "d_phuman": 3.0994415283203125e-06,
+      "semantic": 0.9709665179252625
+    },
+    {
+      "model": "Qwen3-1.7B-Base (HIP)",
+      "src": 2,
+      "src_text": "Artificial intelligence is poised to revolutionize the field of education, offering unprecedented opportunities to personalize learning and enhance student outcomes. By leveraging sophisticated algorithms and vast amounts of data, intelligent tutoring systems can adapt to the unique needs of each learner, providing tailored feedback and support in real time. This capability holds tremendous promise for addressing longstanding inequities in education, as students who might otherwise lack access to individualized instruction can benefit from on-demand assistance. Moreover, AI-powered tools can alleviate the administrative burden on educators, freeing them to focus on the creative and interpersonal aspects of teaching that machines cannot replicate. Nevertheless, the integration of artificial intelligence into classrooms is not without its concerns. Questions surrounding data privacy, algorithmic bias, and the potential erosion of critical thinking skills must be carefully considered. As educational institutions navigate this transformative era, it is essential that they adopt a thoughtful and ethical approach, ensuring that technology serves to augment rather than diminish the invaluable role of human educators.",
+      "out_text": "Artificial intelligence has the potential to revolutionize the education field in profound and substantive ways, providing more personalization and better student outcomes. With advanced algorithms and large quantities of data, intelligent tutoring systems are a good match for tailoring learning experiences to the individual needs of students, and offering real-time feedback and support. This could help to reduce persistent inequities in education, as students who might not otherwise have access to individualized instruction can now take advantage of on-demand help. AI-powered tools can also help to reduce the administrative burden on educators, allowing them to focus more on the creative and social aspects of teaching which machines cannot replicate. However, the use of artificial intelligence in classrooms is not without its challenges. Data privacy, algorithmic bias and the potential erosion of critical thinking skills must be carefully considered. As educational institutions embrace this transformative era, it is essential that they adopt a thoughtful and ethical approach, using technology to enhance, rather than diminish, the irreplaceable role of human educators.",
+      "phuman_src": 1.0251998901367188e-05,
+      "phuman_out": 1.9550323486328125e-05,
+      "d_phuman": 9.298324584960938e-06,
+      "semantic": 0.9747860431671143
+    }
+  ]
+}

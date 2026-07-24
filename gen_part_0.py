@@ -1,0 +1,482 @@
+import json, os
+
+A = []
+H = []
+
+# 1. Cloud computing / cost
+A.append(
+"Cloud computing has fundamentally transformed how organizations manage their infrastructure. "
+"By shifting workloads to providers such as Amazon Web Services, Microsoft Azure, and Google Cloud, "
+"companies can avoid the substantial upfront costs associated with on-premises hardware. Moreover, the "
+"pay-as-you-go model allows businesses to scale resources up or down in response to demand. However, it is "
+"important to recognize that cloud spending can spiral if usage is not carefully monitored. Many organizations "
+"discover that idle instances and over-provisioned databases quietly accumulate significant charges. "
+"Furthermore, the complexity of multi-cloud environments can make cost attribution difficult. In conclusion, "
+"while the cloud offers remarkable flexibility and efficiency, organizations must implement disciplined "
+"governance, tagging strategies, and regular audits to ensure that the promised savings are actually realized "
+"rather than eroded by waste."
+)
+H.append(
+"Everyone talks about how the cloud changed IT, and yeah, it did. Instead of buying a room full of servers, "
+"you just rent what you need from AWS, Azure, or Google. Pay for what you use, scale up when traffic spikes, "
+"scale back down after. Sounds great. The catch? That bill can get scary fast. I've seen teams forget about a "
+"test instance for three months and eat a few thousand dollars for nothing. Over-sized databases do the same "
+"thing, just quietly. And once you're juggling two or three clouds, good luck figuring out which team spent "
+"what. So sure, the cloud is flexible and usually cheaper. But only if somebody's actually watching it. "
+"Tag everything, audit regularly, kill the zombies. Otherwise all those savings just leak away."
+)
+
+# 2. Smartphone upgrade cycle
+A.append(
+"In recent years, the smartphone upgrade cycle has lengthened considerably. Whereas consumers once replaced "
+"their devices every two years, many now keep the same phone for three years or longer. This shift can be "
+"attributed to several factors. First, modern smartphones have reached a level of maturity where year-over-year "
+"improvements are increasingly incremental. Furthermore, rising device prices have made consumers more "
+"hesitant to upgrade frequently. Additionally, manufacturers now offer extended software support, ensuring that "
+"older devices continue to receive security updates and new features. However, this trend presents challenges "
+"for manufacturers, who must find new ways to encourage upgrades. In conclusion, the era of automatic annual "
+"upgrades appears to be ending, and companies will need to demonstrate genuine value to persuade consumers to "
+"part with their existing devices."
+)
+H.append(
+"Remember when people swapped phones every two years like clockwork? That's pretty much over. A lot of folks "
+"hang onto the same handset for three years now, sometimes more, and honestly I get it. New phones barely look "
+"different from last year's. Slightly better camera, a faster chip nobody really notices. Meanwhile prices keep "
+"climbing, so why bother? It helps that companies actually support old phones longer now, pushing security "
+"patches and features for years. Good for us, headache for them. The whole business model used to lean on that "
+"yearly itch to buy. Now that the itch is gone, manufacturers have to give people a real reason to spend "
+"another thousand bucks. Good luck. \"It's marginally thinner\" isn't going to cut it anymore."
+)
+
+# 3. Cybersecurity / phishing
+A.append(
+"Phishing remains one of the most prevalent threats in the cybersecurity landscape. Despite years of awareness "
+"training, employees continue to fall victim to fraudulent emails designed to steal credentials or deploy "
+"malware. Attackers have become increasingly sophisticated, crafting messages that closely mimic legitimate "
+"communications from trusted institutions. Moreover, the rise of artificial intelligence has enabled criminals "
+"to generate convincing, grammatically flawless content at scale. However, organizations are not defenseless. "
+"By implementing multi-factor authentication, deploying email filtering solutions, and fostering a culture of "
+"healthy skepticism, businesses can significantly reduce their exposure. Furthermore, regular simulated "
+"phishing campaigns help reinforce vigilance among staff. In conclusion, phishing is unlikely to disappear, "
+"but a layered defensive strategy combining technology and human awareness offers the best protection against "
+"this persistent and evolving threat."
+)
+H.append(
+"Phishing just won't die. We've been training people for years, and somebody still clicks the fake \"your "
+"account is locked\" email every single week. Can't really blame them, though. The scams look real now. They "
+"copy your bank's logo, your boss's writing style, the works. And with AI churning out flawless emails, the old "
+"giveaway, terrible grammar, is gone. So what works? Turn on multi-factor auth, so a stolen password alone "
+"isn't enough. Good email filters catch a lot before anyone sees them. And honestly, just teaching people to "
+"pause and think before clicking. We run fake phishing tests on our own staff, which feels mean but it keeps "
+"everyone sharp. Phishing isn't going anywhere. But stack enough defenses and you make yourself a much harder "
+"target."
+)
+
+# 4. Open source sustainability
+A.append(
+"Open source software underpins much of the modern digital economy, yet its sustainability is frequently "
+"overlooked. Countless critical libraries are maintained by small teams or even individual volunteers who "
+"receive little compensation for their efforts. This creates a precarious situation in which essential "
+"infrastructure depends on the goodwill of overworked contributors. Moreover, when a key maintainer steps away, "
+"projects can stagnate or be abandoned entirely, leaving downstream users exposed to security risks. However, "
+"awareness of this issue is growing. Corporations that rely heavily on open source are beginning to fund "
+"maintainers directly and contribute engineering resources. Furthermore, platforms now exist to facilitate "
+"sponsorship and donations. In conclusion, ensuring the long-term health of open source requires a collective "
+"commitment from the companies and communities that benefit most from this shared and invaluable resource."
+)
+H.append(
+"Here's something most people never think about: half the internet runs on code maintained by one tired person "
+"in their spare time. No exaggeration. Some library nobody's heard of gets pulled into thousands of apps, and "
+"the guy keeping it alive does it for free, after work, for fun. Then he burns out, walks away, and suddenly "
+"everyone's depending on dead software full of holes. It's a mess waiting to happen. The good news is people "
+"are finally noticing. Big companies that lean on this stuff have started cutting checks and lending engineers "
+"to the projects they use. There are donation platforms now too. But let's be real, it's still patchy. If you "
+"profit off open source, and basically everyone does, you owe something back. Otherwise the whole thing keeps "
+"running on fumes and goodwill."
+)
+
+# 5. Gaming / live service fatigue
+A.append(
+"The video game industry has increasingly embraced the live service model, in which titles are continuously "
+"updated with new content, seasonal events, and monetized cosmetics. While this approach can generate "
+"substantial recurring revenue, it has also contributed to a phenomenon often described as live service "
+"fatigue. Players are expected to commit significant time to a single game in order to keep pace with battle "
+"passes and limited-time offerings. Moreover, the sheer number of competing live service titles makes it "
+"impossible for most players to engage with all of them. However, several high-profile failures have prompted "
+"publishers to reconsider this strategy. Furthermore, there appears to be renewed appreciation for polished, "
+"self-contained single-player experiences. In conclusion, while live service games will remain a fixture of the "
+"industry, the market may be approaching a saturation point that favors quality over perpetual engagement."
+)
+H.append(
+"Every studio wants the next Fortnite. So now we get live service games, the ones that never end, always "
+"nagging you with a new season, a battle pass ticking down, some skin you'll miss if you don't log in tonight. "
+"And it's exhausting. These games basically demand you treat them like a part-time job. Problem is, there are "
+"twenty of them all begging for that same slot in your week, and nobody has time for twenty jobs. A bunch of "
+"big-budget ones have flopped hard lately, and you can almost feel publishers getting nervous. Meanwhile people "
+"are rediscovering how nice it is to just play a finished single-player game, beat it, and move on. Live "
+"service isn't dead, it makes too much money. But I think the well's running dry, and the games that respect "
+"your time are going to win."
+)
+
+# 6. Programming / technical debt
+A.append(
+"Technical debt is an inevitable consequence of software development, arising whenever teams prioritize speed "
+"over long-term maintainability. Much like financial debt, it accrues interest over time, gradually slowing "
+"development and increasing the likelihood of defects. Initially, taking shortcuts may seem reasonable, "
+"particularly when deadlines are pressing. However, as the codebase grows, these accumulated compromises become "
+"increasingly difficult to address. Moreover, untangling poorly structured code often requires substantial "
+"effort that competes with the delivery of new features. Therefore, it is essential for teams to manage "
+"technical debt deliberately, allocating time for refactoring and establishing coding standards. Furthermore, "
+"clear documentation and thorough code review can help prevent debt from accumulating in the first place. In "
+"conclusion, while some technical debt is unavoidable, disciplined management ensures that it remains a "
+"manageable cost rather than a crippling burden."
+)
+H.append(
+"Every codebase has technical debt. It's what happens when you cut a corner to ship on time, and you always end "
+"up cutting corners to ship on time. The analogy to a loan is spot on: you borrow speed now and pay interest "
+"later, except the interest is bugs and the soul-crushing feeling of being scared to touch anything. At first a "
+"shortcut feels fine. Deadline's looming, just hack it in. Fast forward a year and that hack has six other "
+"hacks bolted onto it, and now nobody dares refactor because who knows what breaks. The fix isn't magic. You "
+"carve out real time to clean things up, you write down how stuff works, you actually review each other's code. "
+"Some debt is fine, honestly, you can't avoid it. The trick is not letting it quietly bury you."
+)
+
+# 7. Social media / algorithmic feeds
+A.append(
+"Algorithmic feeds have become the dominant way in which people consume content on social media platforms. "
+"Rather than displaying posts in chronological order, these systems use machine learning to predict which "
+"content will most effectively capture a user's attention. While this can surface relevant and engaging "
+"material, it also raises significant concerns. Moreover, algorithms optimized purely for engagement may "
+"amplify sensational or divisive content, as such material tends to provoke strong reactions. Furthermore, "
+"users often have limited insight into why particular posts appear in their feeds, which undermines "
+"transparency. However, some platforms have begun offering chronological alternatives in response to user "
+"demand. In conclusion, while algorithmic curation can enhance the user experience, it also carries risks for "
+"individual well-being and public discourse, underscoring the need for greater accountability and user control "
+"over these influential systems."
+)
+H.append(
+"Nobody scrolls a plain timeline anymore. The feed decides what you see now, and it's some algorithm guessing "
+"what'll keep your thumb moving. Sometimes that's genuinely useful, it does dig up stuff I'd have missed. But "
+"here's the thing it's actually optimizing for: reactions. And what gets reactions? Outrage. The angriest, "
+"most divisive takes float right to the top because they make people argue, and arguing means time on the app. "
+"Worse, you've got no clue why any of it showed up. Just trust the black box, I guess. A few platforms have "
+"quietly added a \"latest\" toggle after people complained, which is something. Look, a smart feed can be "
+"great. But when the whole machine is tuned to keep you hooked, it's worth asking what it's doing to your head, "
+"and to everyone arguing in the replies."
+)
+
+# 8. AI coding assistants
+A.append(
+"Artificial intelligence coding assistants have rapidly gained popularity among software developers. Tools that "
+"suggest code completions and generate entire functions promise to enhance productivity and reduce repetitive "
+"work. Many developers report that these assistants accelerate routine tasks and help them explore unfamiliar "
+"libraries. However, the technology is not without limitations. Moreover, generated code may contain subtle "
+"bugs or security vulnerabilities that are difficult to detect, particularly for less experienced "
+"programmers who may place excessive trust in the output. Furthermore, concerns persist regarding the licensing "
+"of the code used to train these models. Nevertheless, when used judiciously, AI assistants can serve as "
+"valuable collaborators rather than replacements for human expertise. In conclusion, the responsible adoption "
+"of these tools requires developers to maintain a critical eye, treating suggestions as a starting point "
+"subject to careful review rather than an authoritative solution."
+)
+H.append(
+"AI coding helpers blew up fast, and for good reason. They autocomplete your code, write whole functions, and "
+"when you're poking at a library you've never used, they save real time. I lean on them daily for the boring "
+"stuff. But, big but, the code they spit out is not gospel. It looks confident and clean and sometimes it's "
+"just wrong, or worse, quietly insecure in a way you won't catch unless you know what you're looking for. "
+"Junior devs especially trust it way too much. There's also the messy question of whose code these things "
+"learned from in the first place. Still, used right, it's like having an eager intern who types fast and never "
+"sleeps. Just don't let the intern push to production unsupervised. Read what it gives you, test it, and treat "
+"every suggestion as a first draft."
+)
+
+# 9. Remote work / collaboration tools
+A.append(
+"The widespread adoption of remote work has dramatically increased reliance on digital collaboration tools. "
+"Video conferencing, instant messaging, and shared document platforms now form the backbone of distributed "
+"teams. These technologies enable employees to coordinate across time zones and maintain productivity outside "
+"the traditional office. However, the proliferation of communication channels has introduced new challenges. "
+"Moreover, many workers report a sense of fatigue stemming from back-to-back video meetings and the "
+"expectation of constant availability. Furthermore, the boundary between professional and personal life has "
+"become increasingly blurred. Nevertheless, organizations that establish clear norms around communication and "
+"respect employees' time can mitigate these downsides. In conclusion, collaboration tools have made remote work "
+"viable at scale, but realizing their full benefit requires intentional practices that prioritize focus and "
+"well-being over perpetual connectivity."
+)
+H.append(
+"Remote work runs on apps now. Zoom, Slack, some shared Google Doc, that's the office these days. And it "
+"genuinely works, you can have teammates in three time zones knocking out a project together, which is kind of "
+"amazing. But man, the downsides are real. Six video calls in a row will fry your brain, and the little green "
+"\"available\" dot turns into this quiet pressure to always be reachable. When does the workday even end "
+"anymore? My laptop's on the kitchen table, so basically never, unless I force it. That's the actual fix, "
+"though, boundaries. Teams that say \"no meetings before 10\" or \"don't expect replies at night\" do way "
+"better. The tools made working from home possible for everybody. But they'll also burn you out if you let "
+"them, so you've got to set the rules yourself."
+)
+
+# 10. Quantum computing
+A.append(
+"Quantum computing represents one of the most anticipated developments in the field of computing. By exploiting "
+"quantum mechanical phenomena such as superposition and entanglement, quantum computers have the potential to "
+"solve certain problems that are intractable for classical machines. Promising applications include molecular "
+"simulation, optimization, and cryptography. However, it is important to temper expectations. Moreover, current "
+"quantum hardware remains fragile, requiring extreme cooling and elaborate error correction to manage the "
+"effects of decoherence. Furthermore, the number of useful qubits available today falls far short of what would "
+"be required for many practical applications. Nevertheless, steady progress continues across both hardware and "
+"algorithm development. In conclusion, while quantum computing is unlikely to replace classical computers, it "
+"may eventually complement them by addressing a specialized class of problems, provided that the formidable "
+"engineering challenges can ultimately be overcome."
+)
+H.append(
+"Quantum computing gets hyped to the moon, and I understand why, the idea is wild. Instead of plain ones and "
+"zeros, you get qubits that exploit weird quantum stuff like superposition and entanglement, and in theory they "
+"can crack problems a normal computer would choke on for a billion years. Think simulating molecules, or "
+"breaking encryption. Cool. Now the reality check: these machines are insanely finicky. You have to chill them "
+"to near absolute zero, and they still throw errors constantly because qubits fall apart if you so much as look "
+"at them funny. And we've got nowhere near enough stable qubits to do the impressive stuff yet. It's improving, "
+"slowly, both the hardware and the math. But this won't replace your laptop. It's a specialist tool for a "
+"narrow set of problems, if we ever tame the engineering."
+)
+
+# 11. Streaming services / fragmentation
+A.append(
+"The streaming television landscape has grown increasingly fragmented in recent years. What began as a "
+"convenient alternative to cable has evolved into a crowded marketplace of competing services, each with "
+"exclusive content. Consumers who once subscribed to a single platform now find themselves juggling multiple "
+"subscriptions in order to access their preferred shows. Moreover, the cumulative cost of these subscriptions "
+"can rival or exceed that of traditional cable packages. Furthermore, frequent price increases and the "
+"introduction of advertising tiers have eroded the value proposition that initially drew viewers to streaming. "
+"However, some consumers have adapted by rotating subscriptions, signing up only when there is content they "
+"wish to watch. In conclusion, the streaming revolution has delivered unprecedented choice, but it has also "
+"recreated many of the frustrations that prompted viewers to abandon cable in the first place."
+)
+H.append(
+"Streaming was supposed to save us from cable. Remember that pitch? One cheap subscription, watch whatever you "
+"want, cancel anytime. Ha. Now there are a dozen services, each one hoarding the shows you actually care about, "
+"so you're paying for four or five just to keep up. Add it all up and, surprise, it costs about as much as the "
+"cable bill you ditched. And they keep nickel-and-diming, prices creep up, and now they want to show you ads "
+"unless you pay even more. The whole reason we left! Some people have wised up and just rotate, subscribe for a "
+"month to binge one show, then bail. Smart move. But the dream of simple, cheap TV is basically dead. We "
+"reinvented cable, charged more for it, and called it progress."
+)
+
+# 12. Self-driving cars
+A.append(
+"Autonomous vehicles have long been heralded as the future of transportation, promising to reduce accidents, "
+"ease congestion, and grant mobility to those unable to drive. Significant progress has been made, with several "
+"companies now operating limited robotaxi services in select cities. However, the path to full autonomy has "
+"proven more difficult than many initially predicted. Moreover, self-driving systems struggle with rare and "
+"unpredictable situations that human drivers navigate intuitively. Furthermore, regulatory frameworks and "
+"public trust have not kept pace with technological ambitions. Nevertheless, incremental advances in driver "
+"assistance features continue to make conventional vehicles safer. In conclusion, while fully autonomous "
+"vehicles capable of operating anywhere remain a distant prospect, the underlying technology is already "
+"delivering tangible benefits, suggesting that the transition will be gradual rather than the sudden revolution "
+"once envisioned."
+)
+H.append(
+"We were promised robot cars years ago. Fewer crashes, no traffic, freedom for people who can't drive, the "
+"whole utopia. And to be fair, real progress happened, you can actually hail a driverless taxi in a handful of "
+"cities now. But \"any car, anywhere, no driver\" turned out way harder than the hype suggested. The cars "
+"handle normal roads fine. It's the weird stuff that trips them up, a couch in the lane, a cop waving traffic "
+"through, the random chaos a human just figures out. Plus regulators are cautious and a lot of people flat-out "
+"don't trust the things yet. Meanwhile, the spillover tech, lane-keeping, auto-braking, is quietly making "
+"regular cars safer right now. So the full robot takeover? Still pretty far off. This is going to be a slow "
+"crawl, not the overnight revolution we got sold."
+)
+
+# 13. Password managers
+A.append(
+"Password managers have become an essential tool for maintaining good security hygiene in an era of pervasive "
+"online accounts. The average person now manages dozens or even hundreds of credentials, making it impractical "
+"to remember a unique, strong password for each one. Consequently, many people resort to reusing passwords, a "
+"practice that dramatically increases their vulnerability to credential stuffing attacks. Password managers "
+"address this problem by generating and securely storing complex passwords, requiring the user to remember only "
+"a single master password. Moreover, many such tools offer additional features, including breach monitoring and "
+"secure sharing. However, some users hesitate to adopt them out of concern that a single compromise could "
+"expose all of their accounts. In conclusion, while no security measure is infallible, the benefits of a "
+"reputable password manager substantially outweigh the risks for the vast majority of users."
+)
+H.append(
+"How many online accounts do you have? A hundred? More? Nobody can remember a strong, unique password for each "
+"one, so what do most people do? Reuse the same password everywhere. Which is exactly how one leaked login "
+"becomes ten hacked accounts. That's where a password manager earns its keep. It generates gnarly random "
+"passwords, locks them in a vault, and you only have to remember one master password. Mine also warns me when a "
+"site I use gets breached, which is handy. I get the hesitation, putting every password in one place feels like "
+"a giant target, what if it gets cracked? Fair worry. But the good ones are seriously locked down, and the "
+"alternative, reusing \"Password123\" everywhere, is so much worse. For almost everyone, just use one. It's "
+"worth it."
+)
+
+# 14. Wearable health tech
+A.append(
+"Wearable health technology has experienced remarkable growth, with smartwatches and fitness trackers now "
+"capable of monitoring an expanding array of physiological metrics. Devices can track heart rate, sleep "
+"patterns, blood oxygen levels, and even detect irregular heart rhythms. For many users, these features provide "
+"valuable insight into their health and encourage more active lifestyles. Moreover, in certain cases, "
+"wearables have alerted individuals to serious medical conditions they were previously unaware of. However, the "
+"accuracy of consumer-grade sensors varies, and the data they produce should not be mistaken for a clinical "
+"diagnosis. Furthermore, the continuous collection of sensitive health information raises legitimate privacy "
+"concerns. Nevertheless, when interpreted with appropriate caution, the information gathered by wearables can "
+"empower individuals to take a more proactive role in managing their well-being. In conclusion, these devices "
+"represent a promising, if imperfect, tool for personal health."
+)
+H.append(
+"My watch tracks my heart rate, my sleep, my blood oxygen, and apparently it can spot a dodgy heart rhythm too. "
+"Wild how far these things have come. For a lot of people they're genuinely motivating, you see your step "
+"count tanking and suddenly you take the stairs. And there are real stories of someone's watch flagging an "
+"actual heart problem they had no idea about, which is kind of incredible. That said, let's not get carried "
+"away. The sensors in a hundred-dollar gadget aren't medical-grade, so don't panic over one weird reading or "
+"treat it like a doctor's verdict. And yeah, there's the creepy bit, this thing is logging your most personal "
+"health data 24/7, and you're trusting some company with it. Take the numbers with a grain of salt and they're "
+"a handy nudge. Just don't mistake the watch for a cardiologist."
+)
+
+# 15. Data privacy / tracking
+A.append(
+"Online data privacy has emerged as one of the defining concerns of the digital age. As individuals conduct an "
+"ever-greater share of their lives online, they generate vast quantities of data that companies collect, "
+"analyze, and monetize. Much of this tracking occurs without users' full awareness, through cookies, tracking "
+"pixels, and device fingerprinting. Moreover, the information gathered can be aggregated to build detailed "
+"profiles used for targeted advertising and, in some cases, more troubling purposes. However, regulatory "
+"efforts such as the General Data Protection Regulation have sought to give individuals greater control over "
+"their personal information. Furthermore, browsers and privacy-focused tools increasingly offer features "
+"designed to limit tracking. In conclusion, while individuals can take meaningful steps to protect their "
+"privacy, meaningful change ultimately depends on a combination of stronger regulation, corporate "
+"accountability, and greater public awareness of how personal data is collected and used."
+)
+H.append(
+"You're being watched online, basically all the time, and most people have no idea how much. Every site you "
+"visit, every thing you buy, it's logged, crunched, and sold. The sneaky part is how it happens, cookies, "
+"those invisible tracking pixels, even \"fingerprinting\" that IDs your specific device. Stitch all that "
+"together and companies have a scary-detailed file on you, mostly to sell ads, sometimes for stuff that's a lot "
+"less innocent. Laws like Europe's GDPR have pushed back, forcing a bit more transparency and giving you some "
+"control, which is progress. And browsers keep adding tracker-blocking tools, so you can fight back a little on "
+"your own. But honestly? You can only do so much solo. Real change needs tougher laws, companies actually being "
+"held responsible, and people waking up to just how much of themselves they're giving away for free."
+)
+
+# 16. 5G networks
+A.append(
+"The rollout of 5G networks was accompanied by considerable fanfare, with promises of dramatically faster "
+"speeds, lower latency, and the capacity to connect billions of devices. To a degree, these promises have been "
+"realized, as users in well-covered areas enjoy noticeably improved download speeds. However, the everyday "
+"impact for many consumers has been more modest than the marketing suggested. Moreover, the most transformative "
+"capabilities of 5G, such as enabling autonomous systems and large-scale industrial applications, depend on "
+"infrastructure that is still being developed. Furthermore, the deployment of high-frequency millimeter-wave "
+"technology, which offers the greatest speeds, requires a dense network of antennas that remains limited to "
+"certain urban areas. In conclusion, while 5G represents a genuine technological advance, its full potential "
+"will unfold gradually as networks mature and new applications are developed to take advantage of its "
+"capabilities."
+)
+H.append(
+"Remember the 5G hype? Insane speeds, zero lag, a million gadgets all online at once, the future, basically. And "
+"look, if you're in a good coverage zone, your downloads really are snappier. That part's true. But for most "
+"of us day to day? It feels a lot like fast 4G, not the revolution the ads screamed about. The truly cool "
+"stuff, self-driving fleets, smart factories, all the connected-everything dreams, needs infrastructure that's "
+"still half-built. And the blazing-fast version, millimeter-wave, only works if you cram antennas onto every "
+"corner, so it's stuck in a few downtown blocks. 5G is a real upgrade, don't get me wrong. It's just that the "
+"good stuff arrives slowly, as the networks fill in and people invent things that actually need all that "
+"speed."
+)
+
+# 17. Electric vehicle charging
+A.append(
+"The transition to electric vehicles has accelerated considerably, yet charging infrastructure remains a "
+"significant obstacle to widespread adoption. While drivers who own homes with dedicated parking can "
+"conveniently charge overnight, those who rely on street parking or live in apartments face considerable "
+"difficulty. Moreover, public charging networks are often plagued by reliability problems, with broken or "
+"occupied stations causing frustration. Furthermore, the time required to charge an electric vehicle, even at "
+"fast-charging stations, far exceeds the few minutes needed to refuel a conventional car. However, the "
+"situation is steadily improving as governments and private companies invest heavily in expanding charging "
+"availability. Additionally, battery technology continues to advance, gradually reducing charging times and "
+"extending range. In conclusion, while charging infrastructure has not yet reached the convenience of "
+"traditional refueling, the trajectory suggests that this barrier will diminish over time."
+)
+H.append(
+"EVs are selling like crazy, but charging is still the thing holding a lot of people back. If you've got a "
+"house with a driveway, it's a dream, plug in at night, wake up full. But live in an apartment or park on the "
+"street? Good luck. Then there's the public chargers, which are a coin flip. Half the time the one you drove to "
+"is broken, or some other car's been hogging it for an hour. And even a \"fast\" charger takes way longer than "
+"the five minutes it takes to splash gas in a tank. It is getting better, to be fair. Governments and companies "
+"are pouring money into building more stations, and batteries keep improving, faster charging, more range every "
+"year. So we're not at gas-station convenience yet. But it's clearly heading that way."
+)
+
+# 18. Cryptocurrency / blockchain skepticism
+A.append(
+"Cryptocurrency and blockchain technology have generated intense interest and equally intense skepticism since "
+"their emergence. Proponents argue that decentralized digital currencies can offer an alternative to "
+"traditional financial systems, providing greater autonomy and reducing reliance on intermediaries. Moreover, "
+"the underlying blockchain technology has been proposed for a wide range of applications beyond currency, "
+"including supply chain tracking and digital identity. However, critics point to significant drawbacks. "
+"Furthermore, extreme price volatility, energy consumption, and the prevalence of scams have undermined "
+"confidence in the sector. Despite years of development, relatively few mainstream applications have achieved "
+"widespread practical adoption. Nevertheless, certain use cases, particularly in regions with unstable "
+"currencies, demonstrate genuine utility. In conclusion, while cryptocurrency is unlikely to replace "
+"conventional finance in the near term, the underlying ideas continue to provoke meaningful debate about the "
+"future of money and trust."
+)
+H.append(
+"Crypto, man. Few topics get people fighting faster. The believers say it's freedom money, no banks, no "
+"middlemen, you control your own funds, and the blockchain under it could track supply chains or run digital "
+"IDs or whatever. The doubters roll their eyes and point at the wreckage, prices that swing 40% in a day, the "
+"absurd energy bills, and scam after scam after scam. And here's the awkward part: after all these years, where "
+"are the everyday apps normal people actually use? Mostly still not here. That said, it's not all hot air. In "
+"countries where the local currency is collapsing, crypto genuinely helps people protect their savings, and "
+"that's real. Is it replacing your bank anytime soon? Nah. But the core questions it raises about money and "
+"trust aren't going away, even if half the projects are nonsense."
+)
+
+# 19. Browser extensions / security
+A.append(
+"Browser extensions offer a convenient way to customize and enhance the web browsing experience, providing "
+"functionality ranging from ad blocking to password management. Millions of users install these small programs "
+"without much thought, attracted by the additional features they promise. However, extensions also represent a "
+"frequently underestimated security risk. Moreover, because they often require broad permissions to read and "
+"modify the content of web pages, a malicious or compromised extension can potentially harvest sensitive "
+"information, including login credentials and browsing history. Furthermore, even reputable extensions can be "
+"sold to new owners who introduce harmful behavior through subsequent updates. Therefore, users should exercise "
+"caution, installing only extensions from trusted developers and periodically reviewing the permissions they "
+"have granted. In conclusion, while browser extensions can be genuinely useful, they warrant the same scrutiny "
+"that one would apply to any other software installed on a personal device."
+)
+H.append(
+"Browser extensions are great. Ad blocker, password filler, that one that finds coupon codes, we all pile them "
+"on without a second thought. But here's what nobody tells you: each one is a little program with scary "
+"permissions. Think about it, most of them ask to \"read and change everything on the pages you visit.\" "
+"Everything. So if an extension goes bad, it can quietly scrape your passwords, your history, whatever it "
+"wants. And it doesn't even have to start out evil. Plenty of legit extensions get bought by some shady "
+"company, and then one innocent-looking update turns it into spyware. So be picky. Only install from developers "
+"you actually trust, and every now and then go clean house, check what you've got and what it's allowed to do. "
+"Extensions are just software, and you wouldn't install random software, so treat them the same."
+)
+
+# 20. AI chatbots / customer service
+A.append(
+"Many companies have enthusiastically deployed artificial intelligence chatbots to handle customer service "
+"inquiries, motivated by the promise of reduced costs and round-the-clock availability. For straightforward "
+"questions, these systems can indeed provide quick and accurate responses, freeing human agents to focus on "
+"more complex issues. However, the customer experience is frequently less positive than companies anticipate. "
+"Moreover, chatbots often struggle with nuanced or unusual problems, trapping frustrated customers in "
+"repetitive loops that fail to address their actual concerns. Furthermore, the difficulty of reaching a human "
+"representative can leave customers feeling ignored. Nevertheless, when thoughtfully implemented as a "
+"complement to human support rather than a replacement, chatbots can improve efficiency without alienating "
+"customers. In conclusion, the value of customer service chatbots depends less on the underlying technology "
+"than on whether companies deploy them in a manner that genuinely serves the needs of their customers."
+)
+H.append(
+"Every company wants an AI chatbot answering its customer emails now, and you can see why, it's cheap and it "
+"works at 3 a.m. For the easy stuff, \"where's my order,\" \"reset my password,\" it's honestly fine, fast "
+"even, and it frees up the humans for the hard cases. But we've all been on the other side of this, right? You "
+"have a weird problem, the bot doesn't get it, and it just keeps looping you back to the same useless menu "
+"while you're screaming \"AGENT. HUMAN. PERSON.\" into the void. That's the failure mode. When a company hides "
+"the real people behind a wall of bot, customers feel dumped. Done right, though, the bot handles the boring "
+"90% and hands you to a human the second things get tricky. The tech isn't the issue. It's whether the company "
+"actually cares enough to set it up that way."
+)
+
+assert len(A) == len(H) == 20
+os.makedirs("/Users/steven/hip_paraphraser/data_aihuman", exist_ok=True)
+with open("/Users/steven/hip_paraphraser/data_aihuman/aihuman_part_0.jsonl", "w") as f:
+    for a, h in zip(A, H):
+        f.write(json.dumps({"a": a.strip(), "h": h.strip()}) + "\n")
+print("wrote", len(A), "pairs")

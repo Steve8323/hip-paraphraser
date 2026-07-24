@@ -1,0 +1,31 @@
+Loading configuration file /Users/steven/hip_paraphraser/lora_config.yaml
+Loading pretrained model
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 42736.72it/s]
+Loading datasets
+Training
+Trainable parameters: 1.158% (19.923M/1720.575M)
+Starting training..., iters: 84
+Calculating loss...:   0%|          | 0/3 [00:00<?, ?it/s]Calculating loss...:  33%|███▎      | 1/3 [00:01<00:02,  1.47s/it]Calculating loss...:  67%|██████▋   | 2/3 [00:03<00:01,  1.77s/it]Calculating loss...: 100%|██████████| 3/3 [00:05<00:00,  1.72s/it]Calculating loss...: 100%|██████████| 3/3 [00:05<00:00,  1.71s/it]
+Iter 1: Val loss 1.567, Val took 5.125s
+Iter 10: Train loss 1.148, Learning Rate 1.000e-04, It/sec 0.238, Tokens/sec 116.259, Trained Tokens 4883, Peak mem 5.848 GB
+Iter 20: Train loss 0.840, Learning Rate 9.689e-05, It/sec 0.243, Tokens/sec 123.832, Trained Tokens 9979, Peak mem 6.032 GB
+Calculating loss...:   0%|          | 0/3 [00:00<?, ?it/s]Calculating loss...:  33%|███▎      | 1/3 [00:01<00:03,  1.60s/it]Calculating loss...:  67%|██████▋   | 2/3 [00:03<00:01,  1.91s/it]Calculating loss...: 100%|██████████| 3/3 [00:05<00:00,  1.89s/it]Calculating loss...: 100%|██████████| 3/3 [00:05<00:00,  1.86s/it]
+Iter 25: Val loss 0.876, Val took 5.599s
+Iter 30: Train loss 0.786, Learning Rate 8.799e-05, It/sec 0.253, Tokens/sec 119.677, Trained Tokens 14718, Peak mem 6.032 GB
+Iter 40: Train loss 0.440, Learning Rate 7.452e-05, It/sec 0.253, Tokens/sec 123.344, Trained Tokens 19591, Peak mem 6.032 GB
+Calculating loss...:   0%|          | 0/3 [00:00<?, ?it/s]Calculating loss...:  33%|███▎      | 1/3 [00:01<00:02,  1.47s/it]Calculating loss...:  67%|██████▋   | 2/3 [00:03<00:01,  1.77s/it]Calculating loss...: 100%|██████████| 3/3 [00:05<00:00,  1.72s/it]Calculating loss...: 100%|██████████| 3/3 [00:05<00:00,  1.70s/it]
+Iter 50: Val loss 1.014, Val took 5.118s
+Iter 50: Train loss 0.371, Learning Rate 5.836e-05, It/sec 0.263, Tokens/sec 126.136, Trained Tokens 24387, Peak mem 6.032 GB
+Iter 50: Saved adapter weights to /Users/steven/hip_paraphraser/adapters/adapters.safetensors and /Users/steven/hip_paraphraser/adapters/0000050_adapters.safetensors.
+Iter 60: Train loss 0.304, Learning Rate 4.174e-05, It/sec 0.241, Tokens/sec 118.157, Trained Tokens 29284, Peak mem 6.032 GB
+Iter 70: Train loss 0.263, Learning Rate 2.694e-05, It/sec 0.257, Tokens/sec 131.402, Trained Tokens 34395, Peak mem 6.112 GB
+Calculating loss...:   0%|          | 0/3 [00:00<?, ?it/s]Calculating loss...:  33%|███▎      | 1/3 [00:01<00:03,  1.52s/it]Calculating loss...:  67%|██████▋   | 2/3 [00:03<00:01,  1.83s/it]Calculating loss...: 100%|██████████| 3/3 [00:05<00:00,  1.76s/it]Calculating loss...: 100%|██████████| 3/3 [00:05<00:00,  1.75s/it]
+Iter 75: Val loss 1.084, Val took 5.251s
+Iter 80: Train loss 0.255, Learning Rate 1.603e-05, It/sec 0.254, Tokens/sec 121.179, Trained Tokens 39157, Peak mem 6.112 GB
+Calculating loss...:   0%|          | 0/3 [00:00<?, ?it/s]Calculating loss...:  33%|███▎      | 1/3 [00:01<00:02,  1.48s/it]Calculating loss...:  67%|██████▋   | 2/3 [00:03<00:01,  1.80s/it]Calculating loss...: 100%|██████████| 3/3 [00:05<00:00,  1.74s/it]Calculating loss...: 100%|██████████| 3/3 [00:05<00:00,  1.73s/it]
+Iter 84: Val loss 1.098, Val took 5.183s
+Iter 84: Train loss 0.261, Learning Rate 1.311e-05, It/sec 0.618, Tokens/sec 123.315, Trained Tokens 41151, Peak mem 6.112 GB
+Saved final weights to /Users/steven/hip_paraphraser/adapters/adapters.safetensors.
+[train] 112 pairs, 3.0 epochs -> 84 iters, rank 32, lr 0.0001
+[train] config -> /Users/steven/hip_paraphraser/lora_config.yaml
+[train] adapter saved -> /Users/steven/hip_paraphraser/adapters

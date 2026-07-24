@@ -1,0 +1,18 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/st-hou2020/main/ap-IN9I7I7IiNKml2S5B0tLW8
+✓ Created objects.
+├── 🔨 Created mount /Users/steven/hip_paraphraser/modal_grpo.py
+├── 🔨 Created mount /Users/steven/hip_paraphraser/data
+└── 🔨 Created function train_grpo.
+[modal] loading detector (desklib) + embedder ...
+[modal] loading base model ...
+trainable params: 34,865,152 || all params: 1,755,440,128 || trainable%: 1.9861
+[modal] SFT on 112 pairs, 3 epochs
+.remote() and .map() calls in detached apps may be canceled when the local caller disconnects. Use .spawn() for detached or background work.`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+[modal]  SFT epoch 1: loss 0.619
+[modal]  SFT epoch 2: loss 0.349
+[modal]  SFT epoch 3: loss 0.112
+╭─ Error ──────────────────────────────────────────────────────────────────────╮
+│ [Errno 8] nodename nor servname provided, or not known                       │
+╰──────────────────────────────────────────────────────────────────────────────╯

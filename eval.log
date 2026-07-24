@@ -1,0 +1,15 @@
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 74518.09it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[eval] input 1/12: P(human) 0.15092062950134277 -> 0.2558106780052185, semantic None -> None
+[eval] input 2/12: P(human) 0.48645317554473877 -> 0.5707134306430817, semantic None -> None
+[eval] input 3/12: P(human) 0.02973306179046631 -> 0.914774514734745, semantic None -> None
+[eval] input 4/12: P(human) 0.40798628330230713 -> 0.7868033796548843, semantic None -> None
+[eval] input 5/12: P(human) 0.3534291982650757 -> 0.32426655292510986, semantic None -> None
+[eval] input 6/12: P(human) 0.016656219959259033 -> 0.010099947452545166, semantic None -> None
+[eval] input 7/12: P(human) 0.9697397891432047 -> 0.9746955409646034, semantic None -> None
+[eval] input 8/12: P(human) 0.32001519203186035 -> 0.6602674722671509, semantic None -> None
+[eval] input 9/12: P(human) 0.725874274969101 -> 0.8376739770174026, semantic None -> None
+[eval] input 10/12: P(human) 0.20927351713180542 -> 0.5063587427139282, semantic None -> None
+[eval] input 11/12: P(human) 0.13588297367095947 -> 0.038497209548950195, semantic None -> None
+[eval] input 12/12: P(human) 0.8123704791069031 -> 0.38235366344451904, semantic None -> None
+[eval] report -> /Users/steven/hip_paraphraser/report_20260624_001902.html

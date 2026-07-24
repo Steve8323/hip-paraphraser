@@ -1,0 +1,25 @@
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 47895.80it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 8838.79it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+===== input 1 =====
+P(human): in 0.030  ->  out 0.905  | semantic 0.987
+(1 round, 29 faithful of 29 drawn)
+The song's accompaniment music video features Beyoncé performing in several dance sequences. Three awards were presented at the 2003 MTV Video Music Awards for the song, and Jake Nava received the Music Video Production Association award for Best R&B Video in 2004. Since 2003, " Crazy in Love " has been a staple of Beyoncé's live performances and concert tours. The American Society of Composers, Authors and Publishers (ASCAP) named " Crazy in Love " one of the most performed tracks of 2004. Artists such as David Byrne have recorded their own versions of the song, and it has been used in a range of television programmes and other media.
+
+===== input 2 =====
+P(human): in 0.970  ->  out 0.978  | semantic 0.987
+(1 round, 1 faithful of 1 drawn)
+In 1992, Acen sampled the title track " You Only Live Twice " for his track " Trip II the Moon Part 2 ". Icelandic singer Björk recorded a cover version in 1997. Robbie Williams used the song's unique string figure for " Millennium ", but had to record the track separately due to financial constraints. Coldplay performed the song during their 2001 tour, and Natacha Atlas covered it for her 2005 compilation album The Best of Natacha Atlas. Shirley Bassey, who is credited with three original Bond themes, has also recorded the song.
+
+===== input 3 =====
+P(human): in 0.812  ->  out 0.945  | semantic 0.946
+(1 round, 1 faithful of 1 drawn)
+Often, the mountainous surroundings provided the backdrop for Sholay scenes, although the film did not require much space to shoot. The production crew had to build a road to connect the Bangalore highway with Ramanagara to make the sets more accessible. Art director Ram Yedekar created an entire town on the location. A prison set was also built outdoors near Rajkamal Studio in Mumbai to match the natural lighting during on-location shoots. For a period of time, one section of Ramanagara was referred to as " Sippy Nagar " in honor of the film's director. Today, tourists passing through Ramanagara still receive a visit to the " Sholay rocks ", where most of the film was shot.
